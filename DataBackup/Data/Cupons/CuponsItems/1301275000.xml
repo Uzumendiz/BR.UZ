@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="19"> ;Pacote Especial Fenix
+
+<item index="0" id="100003249" count="2592000" equip="1" percent="100" special="false"/> ;AUG A3 Silence 30D
+<item index="0" id="300005144" count="2592000" equip="1" percent="100" special="false"/> ;Cheytac M200 Silence 30D
+<item index="0" id="1001002033" count="2592000" equip="1" percent="100" special="false"/> ;Chou 30D
+<item index="0" id="1001001034" count="2592000" equip="1" percent="100" special="false"/> ;Rica 30D
+<item index="0" id="1301047000" count="1" equip="1" percent="100" special="false"/> ;Alteracao de Nick 1UND
+</list>

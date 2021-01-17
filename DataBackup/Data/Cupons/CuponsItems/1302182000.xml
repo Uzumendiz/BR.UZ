@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="19"> ;Caixa P90
+
+<item index="0" id="200004361" count="86400" equip="1" percent="100" special="false"/> ;P90 Beyond 1D
+<item index="10" id="200004361" count="604800" equip="1" percent="30" special="false"/> ;P90 Beyond 7D
+
+<item index="1" id="200004297" count="86400" equip="1" percent="100" special="false"/> ;P90 Alien 1D
+<item index="11" id="200004297" count="604800" equip="1" percent="30" special="false"/> ;P90 Alien 7D
+
+<item index="2" id="200004320" count="86400" equip="1" percent="100" special="false"/> ;P90 Darksteel 1D
+<item index="12" id="200004320" count="604800" equip="1" percent="30" special="false"/> ;P90 DarkSteel 7D
+
+<item index="3" id="200004239" count="86400" equip="1" percent="100" special="false"/> ;P90 Horror 1D
+<item index="13" id="200004239" count="604800" equip="1" percent="30" special="false"/> ;P90 Horror 7D
+
+<item index="4" id="200004118" count="86400" equip="1" percent="100" special="false"/> ;P90 Serpent 1D
+<item index="14" id="200004118" count="604800" equip="1" percent="30" special="false"/> ;P90 Serpent 7D
+
+<item index="5" id="200004240" count="86400" equip="1" percent="100" special="false"/> ;P90 M.C Spy 1D
+<item index="15" id="200004240" count="604800" equip="1" percent="30" special="false"/> ;P90 M.C Spy 7D
+
+<item index="6" id="200004114" count="86400" equip="1" percent="100" special="false"/> ;P90 BR Camo 1D
+<item index="16" id="200004114" count="604800" equip="1" percent="30" special="false"/> ;P90 BR Camo 7D
+
+<item index="7" id="200004027" count="86400" equip="1" percent="100" special="false"/> ;P90 M.C.S 1D
+<item index="17" id="200004027" count="604800" equip="1" percent="30" special="false"/> ;P90 M.C.S 7D
+
+<item index="8" id="200004146" count="86400" equip="1" percent="100" special="false"/> ;P90 PBIC 2014 1D
+<item index="18" id="200004146" count="604800" equip="1" percent="30" special="false"/> ;P90 PBIC 2014 7D
+
+<item index="9" id="200004129" count="86400" equip="1" percent="100" special="false"/> ;P90 PBNC5 1D
+<item index="19" id="200004129" count="604800" equip="1" percent="30" special="false"/> ;P90 PBNC5 7D
+</list>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- 
+ INFORMATIONS
+ 
+ Awarded: Item you receive when you name a new account.
+-->
+
+<list>				
+    <Item Awarded="false" Id="100003004" Count="1" Equip="3" Name="K-1" />
+	<Item Awarded="false" Id="200004006" Count="1" Equip="3" Name="K-2" />
+	<Item Awarded="false" Id="601002003" Count="1" Equip="3" Name="K-5" />
+	<Item Awarded="false" Id="300005003" Count="1" Equip="3" Name="SG669" />
+	<Item Awarded="false" Id="400006001" Count="1" Equip="3" Name="870MCS" />
+	<Item Awarded="false" Id="702001001" Count="1" Equip="3" Name="M-7" />
+	<Item Awarded="false" Id="702023001" Count="1" Equip="3" Name="Barefirst" />
+	<Item Awarded="false" Id="803007001" Count="1" Equip="3" Name="K-400" />
+	<Item Awarded="false" Id="904007002" Count="1" Equip="3" Name="Smoke" />
+	<Item Awarded="false" Id="1001001005" Count="1" Equip="3" Name="Red Bulls" />
+    <Item Awarded="false" Id="1001002006" Count="1" Equip="3" Name="Acid Pol" />
+	<Item Awarded="false" Id="1006003041" Count="1" Equip="3" Name="Raptor" />
+	<Item Awarded="false" Id="1006003042" Count="1" Equip="3" Name="Sting" />
+    <Item Awarded="false" Id="1006003043" Count="1" Equip="3" Name="Acid" />
+	<Item Awarded="false" Id="1102003001" Count="1" Equip="3" Name="Capacete básico" />
+	<Item Awarded="true" Id="1301273000" Count="1" Equip="1" Name="Pacote Caveirinha" />
+	<Item Awarded="true" Id="1301664000" Count="1" Equip="1" Name="Every Day Login Box Plus" />
+</list>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<list count="9"> ;Caixa Presentes de Natal
+<item index="0" id="100003165" count="259200" equip="1" percent="40" special="false"/> ;AUG A3 Toy 3D
+<item index="1" id="200004157" count="259200" equip="1" percent="40" special="false"/> ;Kriss S.V Toy 3D
+<item index="2" id="300005092" count="259200" equip="1" percent="40" special="false"/> ;L115A1 Toy 3D
+<item index="3" id="601002052" count="259200" equip="1" percent="40" special="false"/> ;C. Python Toy 3D
+<item index="4" id="1105003009" count="259200" equip="1" percent="40" special="false"/> ;Chapeu Toy 3D
+
+<item index="5" id="100003165" count="86400" equip="1" percent="100" special="false"/> ;AUG A3 Toy 1D
+<item index="6" id="200004157" count="86400" equip="1" percent="100" special="false"/> ;Kriss S.V Toy 1D
+<item index="7" id="300005092" count="86400" equip="1" percent="100" special="false"/> ;L115A1 Toy 1D
+<item index="8" id="601002052" count="86400" equip="1" percent="100" special="false"/> ;C. Python Toy 1D
+<item index="9" id="1105003009" count="86400" equip="1" percent="100" special="false"/> ;Chapeu Toy 1D
+</list>

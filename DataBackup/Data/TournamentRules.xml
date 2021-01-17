@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list>		
+	<!-- PRIMARY -->
+		
+	<Rule Name="@CAMP" Id="100003052" Item="FAMAS G2 Sniper" />
+	<Rule Name="@CAMP" Id="100003096" Item="SCAR-L FC" />
+	<Rule Name="@CAMP" Id="100003102" Item="HK-417" />
+	<Rule Name="@CAMP" Id="100003115" Item="AN-94" />
+	<Rule Name="@CAMP" Id="100003123" Item="TAR-21" />
+	<Rule Name="@CAMP" Id="100003166" Item="SC-2010 D" />
+	<Rule Name="@CAMP" Id="100003167" Item="AN-94 Gold" />
+	<Rule Name="@CAMP" Id="100003168" Item="HK-417 Gold" />
+	<Rule Name="@CAMP" Id="100003169" Item="TAR-21 Gold" />
+	<Rule Name="@CAMP" Id="100003268" Item="Pindad SS2 V5" />
+	<Rule Name="@CAMP" Id="100003269" Item="Pindad SS2 V5 G." />
+	<Rule Name="@CAMP" Id="100003270" Item="Pindad SS2 V5 Silver" />
+	<Rule Name="@CAMP" Id="100003274" Item="AUG A3 Demonic" />
+	<Rule Name="@CAMP" Id="100003275" Item="AUG A3 Dolphin" />
+	<Rule Name="@CAMP" Id="100003276" Item="SC-2010 Dolphin" />
+	<Rule Name="@CAMP" Id="100003287" Item="SC 2010 DRACULA" />
+	<Rule Name="@CAMP" Id="100003297" Item="Pindad SS2 V5 PBNC 2016" />
+	<Rule Name="@CAMP" Id="200004012" Item="KrissSuperV" />
+	<Rule Name="@CAMP" Id="200004013" Item="Kriss S.V" />
+	<Rule Name="@CAMP" Id="200004019" Item="Kriss S.V" />
+	<Rule Name="@CAMP" Id="200004026" Item="Kriss S.V Gold" />
+	<Rule Name="@CAMP" Id="200004030" Item="Kriss S.V D" />
+	<Rule Name="@CAMP" Id="200004039" Item="Kriss S.V Black" />
+	<Rule Name="@CAMP" Id="200004043" Item="SS1-R5 Carbine" />
+	<Rule Name="@CAMP" Id="200004047" Item="Kriss S.V Batik" />
+	<Rule Name="@CAMP" Id="200004049" Item="SS1-R5 Carbine Gold" />
+	<Rule Name="@CAMP" Id="200004050" Item="Kriss S.V E-Sport" />
+	<Rule Name="@CAMP" Id="200004052" Item="Kriss S.V Batik D" />
+	<Rule Name="@CAMP" Id="200004054" Item="Kriss S.V Vector" />
+	<Rule Name="@CAMP" Id="200004060" Item="Kriss S.V IC" />
+	<Rule Name="@CAMP" Id="200004065" Item="Kriss S.V EV" />
+	<Rule Name="@CAMP" Id="200004079" Item="Kriss S.V PBTN" />
+	<Rule Name="@CAMP" Id="200004083" Item="Kriss S.V GRS" />
+	<Rule Name="@CAMP" Id="200004087" Item="Kriss S.V GSL" />
+	<Rule Name="@CAMP" Id="200004090" Item="Kriss S.V Black P." />
+	<Rule Name="@CAMP" Id="200004093" Item="Kriss S.V GRS EV" />
+	<Rule Name="@CAMP" Id="200004099" Item="SS1-R5 Carbine Reload" />
+	<Rule Name="@CAMP" Id="200004101" Item="Kriss S.V 4th Anniversary" />
+	<Rule Name="@CAMP" Id="200004103" Item="Kriss S.V PBIC2013" />
+	<Rule Name="@CAMP" Id="200004106" Item="PP-19 Bizon" />
+	<Rule Name="@CAMP" Id="200004108" Item="Kriss S.V Silence" />
+	<Rule Name="@CAMP" Id="200004110" Item="Kriss S.V Turkey" />
+	<Rule Name="@CAMP" Id="200004115" Item="Kriss S.V Sakura" />
+	<Rule Name="@CAMP" Id="200004116" Item="Kriss S.V Serpent" />
+	<Rule Name="@CAMP" Id="200004121" Item="Kriss S.V 1st Anniversary" />
+	<Rule Name="@CAMP" Id="200004122" Item="Kriss S.V 1st Anniversary" />
+	<Rule Name="@CAMP" Id="200004123" Item="Kriss S.V R" />
+	<Rule Name="@CAMP" Id="200004126" Item="Kriss S.V Inferno" />
+	<Rule Name="@CAMP" Id="200004130" Item="Kriss S.V GSL2014" />
+	<Rule Name="@CAMP" Id="200004132" Item="Kriss S.V Midnight" />
+	<Rule Name="@CAMP" Id="200004134" Item="OA-93" />
+	<Rule Name="@CAMP" Id="200004136" Item="OA-93 Gold" />
+	<Rule Name="@CAMP" Id="200004139" Item="Kriss S.V Brazuca" />
+	<Rule Name="@CAMP" Id="200004142" Item="Kriss S.V Champion" />
+	<Rule Name="@CAMP" Id="200004144" Item="Kriss S.V W.O.E" />
+	<Rule Name="@CAMP" Id="200004149" Item="Kriss S.V NonLogo Midnight" />
+	<Rule Name="@CAMP" Id="200004151" Item="Kriss S.V PC Cafe" />
+	<Rule Name="@CAMP" Id="200004153" Item="Kriss S.V PBSC2014" />
+	<Rule Name="@CAMP" Id="200004155" Item="Kriss S.V G E-Sport" />
+	<Rule Name="@CAMP" Id="200004157" Item="Kriss S.V Toy" />
+	<Rule Name="@CAMP" Id="200004159" Item="OA-93 D." />
+	<Rule Name="@CAMP" Id="200004162" Item="PP-19 Bizon Gold" />
+	<Rule Name="@CAMP" Id="200004165" Item="OA-93 Especial de Natal" />
+	<Rule Name="@CAMP" Id="200004167" Item="PP-19 Bizon Especial de Natal" />
+	<Rule Name="@CAMP" Id="200004168" Item="Kriss S.V Especial de Natal" />
+	<Rule Name="@CAMP" Id="200004170" Item="Kriss S.V Couple Breaker" />
+	<Rule Name="@CAMP" Id="200004172" Item="Kriss S.V ANC 2015" />
+	<Rule Name="@CAMP" Id="200004175" Item="Kriss S.V GRS2" />
+	<Rule Name="@CAMP" Id="200004178" Item="Kriss S.V Newborn 2015" />
+	<Rule Name="@CAMP" Id="200004180" Item="OA-93 GSL2015" />
+	<Rule Name="@CAMP" Id="200004182" Item="P90 Ext Silence GSL2015" />
+	<Rule Name="@CAMP" Id="200004183" Item="Kriss S.V PBNC6" />
+	<Rule Name="@CAMP" Id="200004185" Item="Kriss S.V Ongame" />
+	<Rule Name="@CAMP" Id="200004188" Item="Kriss S.V Redemption" />
+	<Rule Name="@CAMP" Id="200004191" Item="Kriss S.V Summer" />
+	<Rule Name="@CAMP" Id="200004196" Item="Kriss S.V Harimau" />
+	<Rule Name="@CAMP" Id="200004198" Item="OA-93 Independência" />
+	<Rule Name="@CAMP" Id="200004201" Item="Kriss S.V Red" />
+	<Rule Name="@CAMP" Id="200004203" Item="OA-93 PBST2015" />
+	<Rule Name="@CAMP" Id="200004205" Item="Kriss S.V PBNC2015" />
+	<Rule Name="@CAMP" Id="200004207" Item="Kriss S.V PBTC2015" />
+	<Rule Name="@CAMP" Id="200004209" Item="Kriss S.V Mech" />
+	<Rule Name="@CAMP" Id="200004212" Item="Kriss S.V DarkDays" />
+	<Rule Name="@CAMP" Id="200004214" Item="OA-93 PBNC2015 U.S." />
+	<Rule Name="@CAMP" Id="200004216" Item="Kriss S.V PBIC2015" />
+	<Rule Name="@CAMP" Id="200004221" Item="Kriss S.V Sheep" />
+	<Rule Name="@CAMP" Id="200004223" Item="Kriss S.V Basketball" />
+	<Rule Name="@CAMP" Id="200004225" Item="OA-93 Basketball" />
+	<Rule Name="@CAMP" Id="200004228" Item="OA-93 Medical" />
+	<Rule Name="@CAMP" Id="200004232" Item="OA-93 Cobra" />
+	<Rule Name="@CAMP" Id="200004235" Item="Kriss S.V Steam" />
+	<Rule Name="@CAMP" Id="200004237" Item="Kriss S.V Halloween" />
+	<Rule Name="@CAMP" Id="200004242" Item="Kriss S.V Obsidian" />
+	<Rule Name="@CAMP" Id="200004245" Item="Kriss S.V DFN" />
+	<Rule Name="@CAMP" Id="200004247" Item="OA-93 DFN" />
+	<Rule Name="@CAMP" Id="200004249" Item="Kriss S.V XMAS2015" />
+	<Rule Name="@CAMP" Id="200004251" Item="OA-93 XMAS2015" />
+	<Rule Name="@CAMP" Id="200004253" Item="Kriss S.V Monkey" />
+	<Rule Name="@CAMP" Id="200004255" Item="Kriss S.V GRS3" />
+	<Rule Name="@CAMP" Id="200004258" Item="Kriss S.V Beast" />
+	<Rule Name="@CAMP" Id="200004260" Item="Kriss S.V PBGC" />
+	<Rule Name="@CAMP" Id="200004263" Item="Kriss S.V GSL2016" />
+	<Rule Name="@CAMP" Id="200004265" Item="Kriss S.V Midnigth2" />
+	<Rule Name="@CAMP" Id="200004267" Item="Kriss S.V Skeleton" />
+	<Rule Name="@CAMP" Id="200004270" Item="Kriss S.V E-Sport2" />
+	<Rule Name="@CAMP" Id="200004273" Item="OA-93 PBWC2016" />
+	<Rule Name="@CAMP" Id="200004275" Item="Kriss S.V PBWC2016" />
+	<Rule Name="@CAMP" Id="200004278" Item="Kriss S.V Mummy" />
+	<Rule Name="@CAMP" Id="200004280" Item="Kriss S.V ID 1stAnni" />
+	<Rule Name="@CAMP" Id="200004283" Item="Kriss S.V Strike" />
+	<Rule Name="@CAMP" Id="200004285" Item="P90 Ext. Silence Strike" />
+	<Rule Name="@CAMP" Id="200004286" Item="Kriss S.V Demonic" />
+	<Rule Name="@CAMP" Id="200004288" Item="P90 Ext. Silence Demonic" />
+	<Rule Name="@CAMP" Id="200004289" Item="Kriss S.V Dolphin" />
+	<Rule Name="@CAMP" Id="200004291" Item="P90 Ext. Silence Dolphin" />
+	<Rule Name="@CAMP" Id="200004292" Item="OA-93 Blue Diamond" />
+	<Rule Name="@CAMP" Id="200004295" Item="Kriss S.V Lebarean 2016" />
+	<Rule Name="@CAMP" Id="200004298" Item="Kriss S.V Alien" />
+	<Rule Name="@CAMP" Id="200004300" Item="OA-93 Woody" />
+	<Rule Name="@CAMP" Id="200004302" Item="OA-93 Newborn 2016" />
+	<Rule Name="@CAMP" Id="200004304" Item="Kriss S.V Puzzle" />
+	<Rule Name="@CAMP" Id="200004306" Item="P90 Ext. Puzzle" />
+	<Rule Name="@CAMP" Id="200004307" Item="PP-19 Bizon Russian Normal" />
+	<Rule Name="@CAMP" Id="200004308" Item="PP-19 Bizon Russian Deluxe" />
+	<Rule Name="@CAMP" Id="200004309" Item="OA-93 Liberty" />
+	<Rule Name="@CAMP" Id="200004312" Item="Kriss S.V PBIC2016" />
+	<Rule Name="@CAMP" Id="200004314" Item="OA-93 PBIC2016" />
+	<Rule Name="@CAMP" Id="200004316" Item="Kriss S.V PBTC2016" />
+	<Rule Name="@CAMP" Id="200004318" Item="Kriss S.V DarkSteel" />
+	<Rule Name="@CAMP" Id="200004321" Item="Kriss S.V PBNC2016" />
+	<Rule Name="@CAMP" Id="200004323" Item="Kriss S.V PBST2016" />
+	<Rule Name="@CAMP" Id="200004325" Item="Kriss S.V SUPREME" />
+	<Rule Name="@CAMP" Id="200004328" Item="OA-93 Halloween 2016" />
+	<Rule Name="@CAMP" Id="200004330" Item="Kriss S.V Gorgeous" />
+	<Rule Name="@CAMP" Id="200004332" Item="OA-93 Gorgeous" />	
+	<Rule Name="@CAMP" Id="200018078" Item="Dual Kriss Cupid" />
+	<Rule Name="@CAMP" Id="100003178" Item="AUG A3 CoupleBreaker" />
+	<Rule Name="@CAMP" Id="200004170" Item="Kriss S.V Couple Breaker" />
+	<Rule Name="@CAMP" Id="200004171" Item="Kriss S.V Couple Breaker Dummy" />
+	<Rule Name="@CAMP" Id="200018046" Item="Dual Kriss CoupleBreaker" />
+	<Rule Name="@CAMP" Id="100003249" Item="AUG A3 Silence" />
+	<Rule Name="@CAMP" Id="100003247" Item="AK-12 Gold" />
+	<Rule Name="@CAMP" Id="100003246" Item="AK-12" />
+	<Rule Name="@CAMP" Id="100003068" Item="AK-47 FC Red" />
+	<Rule Name="@CAMP" Id="100003125" Item="AK-47 FC" />	
+	<Rule Name="@CAMP" Id="100003218" Item="SCAR-L  F.C PBNC2015US" />
+	<Rule Name="@CAMP" Id="100003045" Item="M4 SR-16 F.C." />
+	<Rule Name="@CAMP" Id="100003236" Item="K2C" />
+	<Rule Name="@CAMP" Id="100003154" Item="SC-2010 Gold" />
+	<Rule Name="@CAMP" Id="100003261" Item="AUG A3 Midnight2" />
+	<Rule Name="@CAMP" Id="100003264" Item="Famas G2 M203 E-Sport2" />
+	<Rule Name="@CAMP" Id="100003177" Item="XM8 GOLD" />
+	<Rule Name="@CAMP" Id="100003174" Item="XM8" />
+	<Rule Name="@CAMP" Id="200018004" Item="Dual Uzi" />
+	<Rule Name="@CAMP" Id="200018005" Item="Dual Mini Uzi" />
+	<Rule Name="@CAMP" Id="200018006" Item="Dual Micro Uzi" />
+	<Rule Name="@CAMP" Id="200018013" Item="Dual Mini Uzi G" />
+						
+		
+	;Snipers
+	<Rule Name="@CAMP" Id="300005029" Item="VSK94" />
+	<Rule Name="@CAMP" Id="300005032" Item="Barrett M82A1" />
+	<Rule Name="@CAMP" Id="300005144" Item="Cheytac M200 Silence" />
+	<Rule Name="@CAMP" Id="300005167" Item="Cheytac M200 Demonic" />
+	<Rule Name="@CAMP" Id="300005168" Item="Cheytac M200 Dolphin" />
+	<Rule Name="@CAMP" Id="300005169" Item="L115A1 Dolphin" />
+	<Rule Name="@CAMP" Id="300005099" Item="Cheytac M200 CoupleBreaker" />
+	<Rule Name="@CAMP" Id="300005082" Item="Barret M82A1 D." />
+	<Rule Name="@CAMP" Id="100003118" Item="Pindad SS2-V4 Para Sniper Reload" />
+	
+	;Shotguns
+	<Rule Name="@CAMP" Id="400006001" Item="870MCS" />
+	<Rule Name="@CAMP" Id="400006002" Item="Gang Chol-Jung Shotgun (870MCS W)" />
+	<Rule Name="@CAMP" Id="400006003" Item="SPAS-15" />
+	<Rule Name="@CAMP" Id="400006004" Item="870MCS W." />
+	<Rule Name="@CAMP" Id="400006005" Item="M1887" />
+	<Rule Name="@CAMP" Id="400006006" Item="SPAS-15 SL" />
+	<Rule Name="@CAMP" Id="400006072" Item="M1887 Dolphin" />
+    <Rule Name="@CAMP" Id="400006038" Item="M1887 PBIC2014" />
+	<Rule Name="@CAMP" Id="400006078" Item="M1887 PBIC2016" />
+	<Rule Name="@CAMP" Id="400006018" Item="SPAS-15 MSC" />
+	<Rule Name="@CAMP" Id="400006015" Item="870MCS D" />
+	<Rule Name="@CAMP" Id="400006017" Item="M1887 D" />
+	<Rule Name="@CAMP" Id="400006020" Item="Kel-Tec KSG-15" />
+	<Rule Name="@CAMP" Id="400006012" Item="SPAS-15 D" />
+	<Rule Name="@CAMP" Id="400006010" Item="M1887 W." />
+		
+	;MachineGuns
+	<Rule Name="@CAMP" Id="500010001" Item="Mk 46 Ext." />
+	<Rule Name="@CAMP" Id="500010002" Item="Mk 46 Silver" />
+	<Rule Name="@CAMP" Id="500010003" Item="RPD" />
+	<Rule Name="@CAMP" Id="500010004" Item="L86 LSW " />
+	<Rule Name="@CAMP" Id="500010005" Item="MK.46 Ext EV" />
+	<Rule Name="@CAMP" Id="500010007" Item="RPD SI" />
+	<Rule Name="@CAMP" Id="500010008" Item="RPD EV" />
+	<Rule Name="@CAMP" Id="500010009" Item="L86 LSW XMAS" />
+	<Rule Name="@CAMP" Id="500010011" Item="Ultimax 100" />
+	<Rule Name="@CAMP" Id="500010012" Item="Ultimax 100 G." />
+	<Rule Name="@CAMP" Id="500010013" Item="Ultimax 100 Madness" />
+	<Rule Name="@CAMP" Id="500010014" Item="Ultimax 100 Mummy" />
+	
+	<!-- SECONDARY -->
+	<Rule Name="@CAMP" Id="601002023" Item="IMI Uzi 9mm" />
+	<Rule Name="@CAMP" Id="601002024" Item="Kriss Vector SDP" />
+	<Rule Name="@CAMP" Id="601002025" Item="HK45 (Single)" />
+	<Rule Name="@CAMP" Id="601002026" Item="HK69" />
+	<Rule Name="@CAMP" Id="601002050" Item="R.B 454 SS8M NonLogo PBSC2013" />
+	<Rule Name="@CAMP" Id="601002069" Item="Kriss Vector SDP DarkDays" />
+	<Rule Name="@CAMP" Id="601002068" Item="R.B Mech" />
+	<Rule Name="@CAMP" Id="601002070" Item="R.B PBIC2015" />
+	<Rule Name="@CAMP" Id="601002073" Item="R.B 454 SS8M+S Cobra" />
+	<Rule Name="@CAMP" Id="601002074" Item="Kriss Vector SDP Camo Soldier" />
+	<Rule Name="@CAMP" Id="601002013" Item="RB 454 SS2M" />
+	<Rule Name="@CAMP" Id="601002014" Item="RB 454 SS5M" />
+	<Rule Name="@CAMP" Id="601002015" Item="RB 454 SS8M" />
+	<Rule Name="@CAMP" Id="601002016" Item="RB 454 SS8M+S" />
+	<Rule Name="@CAMP" Id="601002099" Item="R.B 454 SS8M+S PBIC2016" />	
+	<Rule Name="@CAMP" Id="601002081" Item="R.B 454 SS8M+S Vera Cruz 2016" />
+	
+	<!-- MEELE -->
+	
+	<Rule Name="@CAMP" Id="702001018" Item="Ballistic Knife" />
+	<Rule Name="@CAMP" Id="702001037" Item="Balistic Knife GRS" />
+	<Rule Name="@CAMP" Id="702001107" Item="Kunai" />
+	<Rule Name="@CAMP" Id="702001109" Item="Ballistic Knife Obsidian" />
+	<Rule Name="@CAMP" Id="702001110" Item="Ballistic Knife Spy" />
+	
+	<!-- GRENADE -->
+	
+	<Rule Name="@CAMP" Id="803007004" Item="C-5" />
+	<Rule Name="@CAMP" Id="803007006" Item="C-5 D" />
+	<Rule Name="@CAMP" Id="803007009" Item="Granada de Chocolate" />
+	<Rule Name="@CAMP" Id="803007019" Item="Ketupat Grenade" />
+	<Rule Name="@CAMP" Id="803007020" Item="Granada de açúcar" />
+	<Rule Name="@CAMP" Id="803007025" Item="Medical Kit Opor Ayam" />
+	<Rule Name="@CAMP" Id="803007026" Item="Decoy Bomb" />
+	<Rule Name="@CAMP" Id="803007027" Item="M-14 Mine" />
+	<Rule Name="@CAMP" Id="803007029" Item="Medical Kit PBNC5" />
+	<Rule Name="@CAMP" Id="803007031" Item="Medical Kit Easter" />
+	<Rule Name="@CAMP" Id="803007032" Item="Medical Kit Lotus2014" />
+	<Rule Name="@CAMP" Id="803007033" Item="Soccer Grenade" />
+	<Rule Name="@CAMP" Id="803007035" Item="M-14 Mine D" />
+	<Rule Name="@CAMP" Id="803007038" Item="ShuttleCock Grenade" />
+	<Rule Name="@CAMP" Id="803007039" Item="SepakTakraw Grenade" />
+	<Rule Name="@CAMP" Id="803007040" Item="M18A1 Claymore" />
+	<Rule Name="@CAMP" Id="803007042" Item="Granada de Ovelha" />
+	<Rule Name="@CAMP" Id="803007043" Item="Kit Médico Kurma" />
+	<Rule Name="@CAMP" Id="803007044" Item="C-5 ANC 2015" />
+	<Rule Name="@CAMP" Id="803007045" Item="PB Chocolate" />
+	<Rule Name="@CAMP" Id="803007046" Item="Kit Médico PBNC6" />
+	<Rule Name="@CAMP" Id="803007048" Item="Kit Médico Pigeon" />
+	<Rule Name="@CAMP" Id="803007052" Item="Snowman Grenade" />
+	<Rule Name="@CAMP" Id="803007053" Item="WaterBomb" />
+	<Rule Name="@CAMP" Id="803007056" Item="C-5 PBWC2016" />
+	<Rule Name="@CAMP" Id="803007057" Item="Mummy Grenade" />
+	<Rule Name="@CAMP" Id="803007066" Item="Bola de Futebol 2016" />
+	<Rule Name="@CAMP" Id="803007067" Item="C-5 PBIC2016" />
+	<Rule Name="@CAMP" Id="803007068" Item="C-5 PBNC2016" />
+	<Rule Name="@CAMP" Id="803007049" Item="K-413 4Game" />
+	<Rule Name="@CAMP" Id="803007018" Item="K-413 G" />
+	<Rule Name="@CAMP" Id="803007008" Item="K-413 granada" />
+	
+	<!-- SPECIAL -->
+	
+	<Rule Name="@CAMP" Id="904007005" Item="WP Smoke" />
+	<Rule Name="@CAMP" Id="904007007" Item="WP Smoke D." />
+	<Rule Name="@CAMP" Id="904007011" Item="Medical Kit" />
+	<Rule Name="@CAMP" Id="904007012" Item="WP Smoke Plus" />
+	<Rule Name="@CAMP" Id="904007013" Item="FlashBang Plus" />
+	<Rule Name="@CAMP" Id="904007014" Item="Halloween Medical Kit" />
+	<Rule Name="@CAMP" Id="904007015" Item="Chocolate Medical Kit" />
+	<Rule Name="@CAMP" Id="904007017" Item="WP Smoke" />
+	<Rule Name="@CAMP" Id="904007021" Item="Medical Kit Lotus" />
+	<Rule Name="@CAMP" Id="904007022" Item="WP Smoke Plus" />
+	<Rule Name="@CAMP" Id="904007025" Item="Medical Kit Opor Ayam" />
+	<Rule Name="@CAMP" Id="904007029" Item="Medical Kit PBNC5" />
+	<Rule Name="@CAMP" Id="904007031" Item="Medical Kit Easter" />
+	<Rule Name="@CAMP" Id="904007032" Item="Medical Kit Lotus2014" />
+	<Rule Name="@CAMP" Id="904007043" Item="Medical Kit Kurma" />
+	<Rule Name="@CAMP" Id="904007046" Item="Medical Kit PBNC6" />
+	<Rule Name="@CAMP" Id="904007048" Item="Medical Kit Pigeon" />
+	<Rule Name="@CAMP" Id="904007051" Item="Medical Kit PBNC2015" />
+	<Rule Name="@CAMP" Id="904007058" Item="Smoke Pink" />
+	<Rule Name="@CAMP" Id="904007059" Item="Smoke Blue" />
+	<Rule Name="@CAMP" Id="904007061" Item="Smoke Yellow" />
+	<Rule Name="@CAMP" Id="904007066" Item="Bola de Futebol 2016" />
+	<Rule Name="@CAMP" Id="904007067" Item="C-5 PBIC 2016" />
+	<Rule Name="@CAMP" Id="904007068" Item="C-5 PBNC 2016" />
+	
+	<!-- BERET -->
+	
+	<!--<Rule Name="@CAMP" Id="1103003006" Item="Champion Beret (Set Pro Player)" /> -->
+	<Rule Name="@CAMP" Id="1103003007" Item="Red Star Beret" />
+	<Rule Name="@CAMP" Id="1103003008" Item="Yellow Star Beret" />
+	<Rule Name="@CAMP" Id="1103003009" Item="Cross Knife Beret" />
+	<Rule Name="@CAMP" Id="1103003010" Item="PBTN Beret" />
+	<Rule Name="@CAMP" Id="1103003011" Item="PB Black Beret" />
+	<Rule Name="@CAMP" Id="1103003012" Item="PBTN Champion Beret" />
+	<Rule Name="@CAMP" Id="1103003013" Item="Kopassus Beret" />
+	<Rule Name="@CAMP" Id="1103003015" Item="PBNC5 Beret" />
+	<Rule Name="@CAMP" Id="1103003017" Item="Boina Brasil" />
+	<Rule Name="@CAMP" Id="1103003014" Item="Bope Beret" />
+	<Rule Name="@CAMP" Id="1103003019" Item="Boina ID 1stAnni" />
+	<Rule Name="@CAMP" Id="1103003020" Item="Boina Strike" />
+	
+	;Mask
+	<Rule Name="@CAMP" Id="1104003224" Item="Cupid Mask" />
+		
+	<!-- CHARACTERS -->
+	
+	<Rule Name="@CAMP" Id="1001001007" Item="D-Fox (+20% EXP)" />
+	<Rule Name="@CAMP" Id="1001002008" Item="Leopard (+20% EXP)" />
+	<Rule Name="@CAMP" Id="1001002009" Item="Hide (+30% Point)" />
+	<Rule Name="@CAMP" Id="1001001010" Item="Viper Red (+30% Point)" />
+	<Rule Name="@CAMP" Id="1001001011" Item="Reinforced D-Fox" />
+	<Rule Name="@CAMP" Id="1001002012" Item="Reinforced Leopard" />
+	<Rule Name="@CAMP" Id="1001001013" Item="Reinforced Viper Red" />
+	<Rule Name="@CAMP" Id="1001002014" Item="Reinforced Hide" />
+	<Rule Name="@CAMP" Id="1001001015" Item="Reinforced Combo D-Fox (+20% EXP)" />
+	<Rule Name="@CAMP" Id="1001002016" Item="Reinforced Combo Leopard (+20% EXP)" />
+	<Rule Name="@CAMP" Id="1001001017" Item="Reinforced Combo Viper Red (+30% Point)" />
+	<Rule Name="@CAMP" Id="1001002018" Item="Reinforced Combo Hide (+30% Point)" />
+	<Rule Name="@CAMP" Id="1001002019" Item="Reinforced Acid Poll" />
+	<Rule Name="@CAMP" Id="1001002020" Item="Reinforced Keen Eyes" />
+	<Rule Name="@CAMP" Id="1001001021" Item="Reinforced Red Bulls" />
+	<Rule Name="@CAMP" Id="1001001022" Item="Reinforced Tarantula" />
+	<Rule Name="@CAMP" Id="1001001025" Item="D-Fox" />
+	<Rule Name="@CAMP" Id="1001002026" Item="Leopard" />
+	<Rule Name="@CAMP" Id="1001002027" Item="Hide" />
+	<Rule Name="@CAMP" Id="1001001028" Item="Viper Red" />
+	<Rule Name="@CAMP" Id="1001002035" Item="Reinforced Chou" />
+	<Rule Name="@CAMP" Id="1001001036" Item="Reinforced Rica" />
+	<Rule Name="@CAMP" Id="1001002051" Item="Hide Kopassus" />
+	<Rule Name="@CAMP" Id="1001002052" Item="Leopard Bope" />
+	<Rule Name="@CAMP" Id="1001002053" Item="Hide Cup" />
+	<Rule Name="@CAMP" Id="1001001054" Item="World Tarantula" />
+	<Rule Name="@CAMP" Id="1001001055" Item="Viper Shadow" />
+	<Rule Name="@CAMP" Id="1001002056" Item="Hide Recon" />
+	<Rule Name="@CAMP" Id="1001002058" Item="Keen Eyes Madness" />
+	<Rule Name="@CAMP" Id="1001002059" Item="Acid Paul Madness" />
+	<Rule Name="@CAMP" Id="1001002060" Item="Hide Madness" />
+	<Rule Name="@CAMP" Id="1001002061" Item="Leopard Madness" />
+	<Rule Name="@CAMP" Id="1001002067" Item="Hide Strike" />
+	<Rule Name="@CAMP" Id="1001001068" Item="Viper Kopassus" />
+	<Rule Name="@CAMP" Id="1006003051" Item="Hide Kopassus" />
+	<Rule Name="@CAMP" Id="1006003052" Item="Leopard Skull" />
+	<Rule Name="@CAMP" Id="1006003055" Item="Viper Red Shadow" />
+	<Rule Name="@CAMP" Id="1006003056" Item="Hide Recon" />
+	<Rule Name="@CAMP" Id="1006003068" Item="Viper Kopassus" />
+	
+	<!-- COUPONS -->
+		
+	<Rule Name="COUPON" Id="1200028000" Item="Mega HP 10%" />
+	<Rule Name="COUPON" Id="1200034000" Item="C4 Speed Kit" />
+	<Rule Name="COUPON" Id="1200035000" Item="Explosivo Extra" />
+	<Rule Name="COUPON" Id="1200044000" Item="Colete à prova de balas (10%)" />
+	<Rule Name="COUPON" Id="1200065000" Item="Colete à prova de balas (GM) (90%)" />
+	<Rule Name="COUPON" Id="1200079000" Item="Colete à prova de bala reforçado (20%)" />
+	<Rule Name="COUPON" Id="1200026000" Item="Troca rápida de arma" />
+	<Rule Name="COUPON" Id="1200027000" Item="Recarregamento rápido" />
+	<!--<Rule Name="COUPON" Id="1200008000" Item="Bônus 40% munição" /> -->
+	<Rule Name="COUPON" Id="1200029000" Item="Invulnerabilidade no respawn (+ 1Seg)" />
+
+</list>

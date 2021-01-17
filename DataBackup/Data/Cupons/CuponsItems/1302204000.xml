@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="10"> ;Caixa Barret Premium
+<item index="0" id="300005232" count="2592000" equip="1" percent="30" special="false"/> ;Barret M82A1 Premium 30D
+<item index="1" id="300005232" count="604800" equip="1" percent="45" special="false"/> ;Barret M82A1 Premium 7D
+<item index="2" id="300005232" count="259200" equip="1" percent="60" special="false"/> ;Barret M82A1 Premium 3D
+<item index="3" id="300005232" count="86400" equip="1" percent="80" special="false"/> ;Barret M82A1 Premium 1D
+
+<item index="4" id="300005132" count="604800" equip="1" percent="60" special="false"/> ;Tactilite T2 G 7D
+<item index="5" id="300005132" count="259200" equip="1" percent="80" special="false"/> ;Tactilite T2 G 3D
+
+<item index="6" id="300005121" count="604800" equip="1" percent="30" special="false"/> ;Cheytac M200 Gold 7D
+<item index="7" id="300005121" count="259200" equip="1" percent="45" special="false"/> ;Cheytac M200 Gold 3D
+
+<item index="8" id="300005015" count="604800" equip="1" percent="30" special="false"/> ;L115A1 Gold 7D
+<item index="9" id="300005015" count="259200" equip="1" percent="45" special="false"/> ;L115A1 Gold 3D
+
+<item index="10" id="300005232" count="7776000" equip="1" percent="10" special="true"/> ;Barret M82A1 Premium 90D
+</list>

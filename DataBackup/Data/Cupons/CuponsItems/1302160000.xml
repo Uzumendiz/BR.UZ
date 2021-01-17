@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="20"> ;Caixa Comic
+<item index="0" id="100003345" count="259200" equip="1" percent="50" special="false"/> ;AUG A3 Comic 3D
+
+<item index="1" id="100003346" count="259200" equip="1" percent="100" special="false"/> ;AK-47 Ext Comic 3D
+
+<item index="2" id="200004396" count="259200" equip="1" percent="100" special="false"/> ;Kriss S.V Comic 3D
+
+<item index="3" id="300005215" count="259200" equip="1" percent="60" special="false"/> ;Cheytac M200 Comic 3D
+
+<item index="4" id="400006101" count="259200" equip="1" percent="100" special="false"/> ;M1887 Comic 3D
+
+<item index="5" id="601002117" count="259200" equip="1" percent="100" special="false"/> ;D-Eagle Comic 3D
+
+<item index="6" id="702001181" count="259200" equip="1" percent="100" special="false"/> ;Amok Kukri Comic 3D
+
+<item index="7" id="300005309" count="2592000" equip="1" percent="25" special="true"/> ;Cheytac M200 Midnight4 30D
+
+</list>

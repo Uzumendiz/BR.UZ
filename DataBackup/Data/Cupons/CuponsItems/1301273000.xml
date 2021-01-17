@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="5"> ;Pacote Caveirinha
+<item index="0" id="100003283" count="604800" equip="1" percent="100" special="false"/> ;AUG A3 Puzzle 7D
+<item index="0" id="200004306" count="604800" equip="1" percent="100" special="false"/> ;P90 Ext. Puzzle 7D
+<item index="0" id="300005177" count="604800" equip="1" percent="100" special="false"/> ;Tactilite T2 Puzzle 7D
+<item index="0" id="1001001034" count="604800" equip="1" percent="100" special="false"/> ;Rica 7D
+<item index="0" id="1001002033" count="604800" equip="1" percent="100" special="false"/> ;Chou 7D
+</list>

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+  <cupom item_id="1200065000" effect_flag="1" />
+  <cupom item_id="1200079000" effect_flag="4" />
+  <cupom item_id="1200078000" effect_flag="8" />
+  <cupom item_id="1200044000" effect_flag="16" />
+  <cupom item_id="1200040000" effect_flag="32" />
+  <cupom item_id="1200036000" effect_flag="64" />	   
+  <cupom item_id="1200035000" effect_flag="128" />
+  <cupom item_id="1200034000" effect_flag="256" />
+  <cupom item_id="1200032000" effect_flag="512" />
+  <cupom item_id="1200031000" effect_flag="1024" />
+  <cupom item_id="1200030000" effect_flag="2048" />
+  <cupom item_id="1200029000" effect_flag="4096" />
+  <cupom item_id="1200028000" effect_flag="8192" />
+  <cupom item_id="1200027000" effect_flag="16384" />
+  <cupom item_id="1200026000" effect_flag="32768" />
+  <cupom item_id="1200033000" effect_flag="65536" />
+  <cupom item_id="1200017000" effect_flag="131072" />
+  <cupom item_id="1200008000" effect_flag="262144" />		   
+  <cupom item_id="1200007000" effect_flag="1048576" />
+  <cupom item_id="1200064000" effect_flag="2097152" />
+  <cupom item_id="1200080000" effect_flag="4194304" />
+  <cupom item_id="1200185000" effect_flag="8388608" />
+  <cupom item_id="1200242000" effect_flag="16777216" />
+</list>

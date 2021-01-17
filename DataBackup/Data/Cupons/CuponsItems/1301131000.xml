@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="14"> ;Caixa Project Reload
+<item index="0" id="100003449" count="1" equip="3" percent="5" special="true"/> ;AUG A3 Digital PERMANENTE
+<item index="1" id="1300034001" count="1" equip="1" percent="45" special="false"/> ;C4 Speed Kit 1D
+<item index="10" id="200004521" count="86400" equip="1" percent="51" special="false"/> ;P90 Ext Fire Dragon 1D
+<item index="11" id="1500000005" count="1" equip="1" percent="25" special="false"/> ;5,000 Gold + Garena Knuckles 1D
+<item index="11" id="702023009" count="86400" equip="1" percent="100" special="false"/> ;Garena Knuckles 1D
+<item index="12" id="1500000100" count="1" equip="1" percent="15" special="false"/> ;100,000 Gold
+<item index="13" id="1500000050" count="1" equip="1" percent="20" special="false"/> ;50,000 Gold
+<item index="2" id="1300028001" count="1" equip="1" percent="60" special="false"/> ;Mega HP 10% 1D
+<item index="3" id="1302379000" count="1" equip="1" percent="17" special="false"/> ;Caixa Facas Premium 1U
+<item index="4" id="1001001049" count="86400" equip="1" percent="60" special="false"/> ;Tarantula - Garena 1D
+<item index="5" id="1001002047" count="86400" equip="1" percent="60" special="false"/> ;Keen Eyes - Garena 1D
+<item index="6" id="1001001436" count="86400" equip="1" percent="60" special="false"/> ;Rudolph Viper 1D
+<item index="7" id="400006030" count="86400" equip="1" percent="100" special="false"/> ;M1887 Bloody 1D
+<item index="8" id="601002052" count="86400" equip="1" percent="100" special="false"/> ;C. Python Toy 1D
+<item index="9" id="1001002063" count="86400" equip="1" percent="80" special="false"/> ;Keen Eyes Infectada 1D
+</list>

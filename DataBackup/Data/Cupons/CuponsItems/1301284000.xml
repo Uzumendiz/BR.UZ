@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="5"> ;Pacote UP Nivel 5
+<item index="0" id="200004075" count="604800" equip="1" percent="100" special="false"/> ;P90 EXT G 7D
+<item index="0" id="702001011" count="604800" equip="1" percent="100" special="false"/> ;Amok Kukri D 7D
+<item index="0" id="1001001015" count="604800" equip="1" percent="100" special="false"/> ;Reinforced D-Fox 7D
+<item index="0" id="1300028007" count="1" equip="1" percent="100" special="false"/> ;Mega HP 10% 7D
+<item index="0" id="1301268000" count="1" equip="1" percent="100" special="false"/> ;Lista do Pacote Nivel 8
+</list>

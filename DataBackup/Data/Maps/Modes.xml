@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<list>
+  ;TD TEAM DEATH-MATCH
+  <map Id="0" Mode="0" Tag="0" Enable="false" Name="NULL" />
+  <map Id="1" Mode="4525" Tag="0" Enable="true" Name="TD_PORTAKABA" />
+  <map Id="2" Mode="425" Tag="0" Enable="true" Name="TD_REDROCK" />
+  <map Id="3" Mode="4493" Tag="0" Enable="true" Name="TD_LIBRARY" />
+  <map Id="4" Mode="4141" Tag="0" Enable="true" Name="TD_MSTATION" />
+  <map Id="5" Mode="1" Tag="0" Enable="true" Name="TD_MIDNIGHTZONE" />
+  <map Id="6" Mode="140" Tag="0" Enable="true" Name="TD_UPTOWN" />
+  <map Id="7" Mode="4524" Tag="0" Enable="true" Name="TD_BURNINGHALL" />
+  <map Id="8" Mode="140" Tag="0" Enable="true" Name="TD_DSQUAD" />
+  <map Id="9" Mode="4268" Tag="0" Enable="true" Name="TD_CRACKDOWN" />
+  <map Id="10" Mode="13" Tag="0" Enable="true" Name="TD_SAINTMANSION" />
+  <map Id="11" Mode="172" Tag="0" Enable="true" Name="TD_EASTERNROAD" />
+  <map Id="12" Mode="8" Tag="0" Enable="true" Name="TD_DOWNTOWN" />
+  <map Id="13" Mode="8" Tag="0" Enable="true" Name="TD_LUXVILLE" />
+  <map Id="14" Mode="8" Tag="0" Enable="true" Name="TD_BLOWCITY" />
+  <map Id="15" Mode="8" Tag="0" Enable="true" Name="TD_STORMTUBE" />  
+  <map Id="16" Mode="0" Tag="0" Enable="false" Name="NULL" />
+  <map Id="17" Mode="8" Tag="0" Enable="true" Name="TD_BREAKDOWN" />
+  <map Id="18" Mode="172" Tag="0" Enable="true" Name="TD_TRAININGCAMP" />
+  <map Id="19" Mode="8" Tag="0" Enable="true" Name="TD_SENTRYBASE" />
+  <map Id="20" Mode="4520" Tag="0" Enable="true" Name="TD_DESERTCAMP" />
+  <map Id="21" Mode="8" Tag="0" Enable="true" Name="TD_KICKPOINT" />
+  <map Id="22" Mode="140" Tag="0" Enable="true" Name="TD_FACEROCK" />
+  <map Id="23" Mode="168" Tag="0" Enable="true" Name="TD_SUPPLYBASE" />
+  <map Id="24" Mode="0" Tag="0" Enable="true" Name="TD_SANDSTORM" />
+
+  ;BB BOMB - DESTRUIÇÃO
+  <map Id="25" Mode="132" Tag="0" Enable="true" Name="BB_DOWNTOWN" />
+  <map Id="26" Mode="128" Tag="0" Enable="true" Name="BB_LUXVILLE" />
+  <map Id="27" Mode="132" Tag="0" Enable="true" Name="BB_OUTPOST" />
+  <map Id="28" Mode="128" Tag="0" Enable="true" Name="BB_BLOWCITY" />
+  <map Id="29" Mode="128" Tag="0" Enable="true" Name="BB_STORMTUBE" />
+  <map Id="30" Mode="128" Tag="0" Enable="true" Name="BB_SENTRYBASE" />
+  <map Id="31" Mode="128" Tag="0" Enable="true" Name="BB_HOSPITAL" />
+  <map Id="32" Mode="128" Tag="0" Enable="true" Name="BB_DOWNTOWN2" />
+  <map Id="33" Mode="128" Tag="0" Enable="true" Name="BB_SHOPPINGCENTER" />
+  <map Id="34" Mode="128" Tag="0" Enable="true" Name="BB_SANDSTORM" />
+
+  ;DS SABOTAGEM
+  <map Id="35" Mode="128" Tag="0" Enable="true" Name="DS_BREAKDOWN" />
+  <map Id="36" Mode="128" Tag="0" Enable="false" Name="NULL" />
+  <map Id="37" Mode="128" Tag="0" Enable="false" Name="NULL" />
+  <map Id="38" Mode="128" Tag="0" Enable="true" Name="DS_HELISPOT" />
+  
+  ;DF DEFESA
+  <map Id="39" Mode="0" Tag="0" Enable="true" Name="DF_BLACKPANTHER" />
+
+  ;ES DINO
+  <map Id="40" Mode="0" Tag="0" Enable="true" Name="ES_BREEDINGNEST" />
+  <map Id="41" Mode="0" Tag="0" Enable="true" Name="ES_DUPTOWN" />
+  <map Id="42" Mode="0" Tag="0" Enable="true" Name="ES_DINOBREAKDOWN" />
+  <map Id="43" Mode="0" Tag="0" Enable="false" Name="NULL" />
+	
+  ;TUTORIAL
+  <map Id="44" Mode="0" Tag="0" Enable="false" Name="TUTORIAL" />
+	
+  ;TD TEAM DEATH-MATCH
+  <map Id="45" Mode="0" Tag="0" Enable="true" Name="TD_SHOPPINGCENTER" />
+  <map Id="46" Mode="0" Tag="0" Enable="true" Name="TD_SAFARI" />
+  <map Id="47" Mode="0" Tag="0" Enable="true" Name="TD_DRAGONALLEY" />
+  <map Id="48" Mode="0" Tag="0" Enable="true" Name="TD_MACHUPICHU" />
+  
+  ;BB BOMB - DESTRUIÇÃO
+  <map Id="49" Mode="0" Tag="0" Enable="true" Name="BB_CARGOSHIP" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="50" Mode="0" Tag="0" Enable="true" Name="TD_TWOTOWERS" />
+  
+  ;CC CROSS-COUNTER
+  <map Id="51" Mode="0" Tag="0" Enable="true" Name="CC_CRACKDOWN" />
+  <map Id="52" Mode="0" Tag="0" Enable="true" Name="CC_SAINTMANSION" />
+  <map Id="53" Mode="0" Tag="0" Enable="true" Name="CC_DSQUAD" />
+  <map Id="54" Mode="0" Tag="0" Enable="true" Name="CC_PORTAKABA" />
+  <map Id="55" Mode="0" Tag="0" Enable="true" Name="CC_MSTATION" />
+  <map Id="56" Mode="0" Tag="0" Enable="true" Name="CC_TRAININGCAMP" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="57" Mode="0" Tag="0" Enable="true" Name="TD_ANGKORRUINS" />
+	
+  ;CC CROSS-COUNTER
+  <map Id="58" Mode="0" Tag="0" Enable="true" Name="CC_REDROCK" />
+  <map Id="59" Mode="0" Tag="0" Enable="true" Name="CC_SAFARI" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="60" Mode="0" Tag="0" Enable="true" Name="TD_GHOSTTOWN" />
+  <map Id="61" Mode="0" Tag="0" Enable="true" Name="TD_GRANDBAZAAR" />
+  
+  ;CC CROSS-COUNTER
+  <map Id="62" Mode="0" Tag="0" Enable="true" Name="CC_DINOLAB" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="63" Mode="0" Tag="0" Enable="true" Name="TD_UNDER23" />
+  <map Id="64" Mode="0" Tag="0" Enable="true" Name="TD_TAIPEICITYMALL" />
+  <map Id="65" Mode="0" Tag="0" Enable="true" Name="TD_SAFARI2" />
+	  
+  ;BB BOMB - DESTRUIÇÃO	  
+  <map Id="66" Mode="0" Tag="0" Enable="true" Name="BB_AIRPORT" />
+	  
+  ;CC CROSS-COUNTER
+  <map Id="67" Mode="0" Tag="0" Enable="true" Name="CC_SAFARI2" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="68" Mode="0" Tag="0" Enable="true" Name="TD_METRO" />
+  
+  ;EH THIEF MODE
+  <map Id="69" Mode="0" Tag="0" Enable="true" Name="EH_MERRYWHITEVILLAGE" />
+  <map Id="70" Mode="0" Tag="0" Enable="false" Name="NULL" />
+  <map Id="71" Mode="0" Tag="0" Enable="false" Name="NULL" />
+  <map Id="72" Mode="0" Tag="0" Enable="false" Name="NULL" />
+  <map Id="73" Mode="0" Tag="0" Enable="false" Name="NULL" />
+  <map Id="74" Mode="0" Tag="0" Enable="false" Name="NULL" />
+  <map Id="75" Mode="0" Tag="0" Enable="false" Name="NULL" />
+  <map Id="76" Mode="0" Tag="0" Enable="false" Name="NULL" />
+	
+  ;TD TEAM DEATH-MATCH
+  <map Id="77" Mode="0" Tag="0" Enable="true" Name="TD_RUSHHOUR" />
+  <map Id="78" Mode="0" Tag="0" Enable="true" Name="TD_CARGOPORT" />
+  <map Id="79" Mode="0" Tag="0" Enable="true" Name="TD_BLACKMAMBA" />
+  
+  ;BB BOMB - DESTRUIÇÃO	  
+  <map Id="80" Mode="0" Tag="0" Enable="true" Name="BB_SAFEHOUSE" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="81" Mode="0" Tag="0" Enable="true" Name="TD_HOLIDAY" />
+  <map Id="82" Mode="0" Tag="0" Enable="true" Name="TD_WESTSTATION" />
+  
+  ;BB BOMB - DESTRUIÇÃO
+  <map Id="83" Mode="0" Tag="0" Enable="true" Name="BB_HARDROCK" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="84" Mode="0" Tag="0" Enable="true" Name="TD_HOUSEMUSEUM" />
+  <map Id="85" Mode="0" Tag="0" Enable="true" Name="TD_PUMPKINHOLLOW" />
+  <map Id="86" Mode="0" Tag="0" Enable="true" Name="TD_ROTHENVILLAGE" />
+  
+  ;UU
+  <map Id="87" Mode="0" Tag="0" Enable="false" Name="UU_HOLIDAY" /> ;BUG
+  
+  <map Id="88" Mode="0" Tag="0" Enable="true" Name="TD_WATERCOMPLEX" />
+  <map Id="89" Mode="0" Tag="0" Enable="true" Name="TD_HOTELCAMOUFLAGE" />
+  <map Id="90" Mode="0" Tag="0" Enable="true" Name="TD_BATTLESHIP" />
+  <map Id="91" Mode="0" Tag="0" Enable="false" Name="BB_RAMPARTTOWN" /> ;ERROR
+  <map Id="92" Mode="0" Tag="0" Enable="true" Name="BB_BALLISTIC" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="93" Mode="0" Tag="0" Enable="true" Name="TD_RAMPARTTOWN" />
+  
+  ;BB BOMB - DESTRUIÇÃO
+  <map Id="94" Mode="0" Tag="0" Enable="true" Name="BB_FALLUCITY" />
+  <map Id="95" Mode="0" Tag="0" Enable="false" Name="NULL" /> ;TD_TESTMAP?
+  <map Id="96" Mode="0" Tag="0" Enable="false" Name="EH_HOLIDAY" /> ;BUG
+  <map Id="97" Mode="0" Tag="0" Enable="false" Name="NULL" /> ;TD_TEST?
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="98" Mode="0" Tag="0" Enable="true" Name="TD_HINDRANCE" />
+  <map Id="99" Mode="0" Tag="0" Enable="false" Name="TD_SEWERAGE" /> ;ESGOTO (INFECTION)
+  <map Id="100" Mode="0" Tag="0" Enable="true" Name="TD_SLUMAREA" />
+  <map Id="101" Mode="0" Tag="0" Enable="true" Name="TD_NEWLIBRARY" />
+ 
+  ;EH THIEF MODE
+  <map Id="102" Mode="0" Tag="0" Enable="true" Name="EH_SANDSTORM" />
+  
+  ;ES
+  <map Id="103" Mode="0" Tag="0" Enable="false" Name="ES_DINORUINS" /> ;BUG
+  <map Id="104" Mode="0" Tag="0" Enable="false" Name="NULL" />
+	
+  ;BB BOMB - DESTRUIÇÃO
+  <map Id="105" Mode="8" Tag="0" Enable="false" Name="BB_MARINEWAVE" /> ;SEM IMG DC
+  
+  <map Id="106" Mode="8" Tag="0" Enable="false" Name="" /> ;STILL RAID?
+  <map Id="107" Mode="8" Tag="0" Enable="false" Name="NULL" />
+  <map Id="108" Mode="8" Tag="0" Enable="false" Name="NULL" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="109" Mode="8" Tag="0" Enable="true" Name="TD_AMPERA" />
+  
+  ;BB BOMB - DESTRUIÇÃO
+  <map Id="110" Mode="8" Tag="0" Enable="true" Name="BB_MIHAWK" />
+  <map Id="111" Mode="8" Tag="0" Enable="true" Name="BB_BROKENALLEY" />
+  <map Id="112" Mode="8" Tag="0" Enable="true" Name="BB_PROVENCE" />
+  
+  ;TD TEAM DEATH-MATCH
+  <map Id="113" Mode="8" Tag="0" Enable="true" Name="TD_SEWERAGE" />
+  <map Id="114" Mode="8" Tag="0" Enable="true" Name="TD_MIHAWK" />
+  
+  <map Id="115" Mode="8" Tag="0" Enable="false" Name="NULL" />
+  
+  ;BB BOMB - DESTRUIÇÃO
+  <map Id="116" Mode="8" Tag="0" Enable="false" Name="BB_ROADSIDE" /> ;SEM IMG DC
+  
+  <map Id="117" Mode="8" Tag="0" Enable="true" Name="TD_INFECTION_AIRPORT" />
+
+  <map Id="118" Mode="8" Tag="0" Enable="false" Name="NULL" />
+  
+  ;BB BOMB - DESTRUIÇÃO
+  <map Id="119" Mode="8" Tag="0" Enable="true" Name="BB_FORTSANTIAGO" />
+  <map Id="120" Mode="8" Tag="0" Enable="false" Name="NULL" />
+
+  <map Id="121" Mode="8" Tag="0" Enable="false" Name="TD_HOSPITAL" /> ;SEM IMG
+  <map Id="122" Mode="8" Tag="0" Enable="false" Name="NULL" />
+  <map Id="123" Mode="8" Tag="0" Enable="false" Name="NULL" />
+  <map Id="124" Mode="8" Tag="0" Enable="false" Name="NULL" />
+</list>

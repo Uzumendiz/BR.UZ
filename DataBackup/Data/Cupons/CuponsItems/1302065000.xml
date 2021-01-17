@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="5"> ;Pacote UP Nivel 41
+<item index="0" id="100003190" count="2592000" equip="1" percent="100" special="false"/> ;AUG A3 Summer 30D
+<item index="0" id="300005106" count="2592000" equip="1" percent="100" special="false"/> ;L115A1 Summer 30D
+<item index="0" id="1102003003" count="2592000" equip="1" percent="100" special="false"/> ;Capacete Avancado 30D
+<item index="0" id="1001001034" count="2592000" equip="1" percent="100" special="false"/> ;Rica 30D
+<item index="0" id="1001002033" count="2592000" equip="1" percent="100" special="false"/> ;Chou 30D
+</list>

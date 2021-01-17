@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list>
+	<Rank Id="0" NextLevel="2000" Gold="0" AllExp="0" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+	
+	<Rank Id="1" NextLevel="3000" Gold="1000" AllExp="2000" Brooch="1" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="100003099" Count="86400" Equip="1" Name="AK SOPMOD GRS 1D" />
+		<Item Id="300005012" Count="86400" Equip="1" Name="Dragunov CG. 1D" />
+		<Item Id="400006038" Count="86400" Equip="1" Name="M1887 PBIC2014 1D" />
+		<Item Id="601014011" Count="86400" Equip="1" Name="Dual D-Eagle GRS 1D" />
+		<Item Id="702001021" Count="86400" Equip="1" Name="Keris 1D" />
+	</Rank>
+		
+	<Rank Id="2" NextLevel="4000" Gold="2000" AllExp="5000" Brooch="2" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="100003037" Count="86400" Equip="1" Name="AUG A3 G 1D" />
+		<Item Id="601002018" Count="86400" Equip="1" Name="C. Python G D 1D" />
+		<Item Id="702001017" Count="86400" Equip="1" Name="Fang Blade 1D" />
+		<Item Id="803007018" Count="86400" Equip="1" Name="K-413 G 1D" />
+	</Rank>
+	
+	<Rank Id="3" NextLevel="5000" Gold="4000" AllExp="9000" Brooch="3" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="200004026" Count="86400" Equip="1" Name="Kriss S.V G 1D" />
+		<Item Id="601014004" Count="86400" Equip="1" Name="Dual D-Eagle G 1D" />
+		<Item Id="702001011" Count="86400" Equip="1" Name="Amok Kukri D. 1D" />
+		<Item Id="803007018" Count="86400" Equip="1" Name="K-413 G 1D" />
+	</Rank>
+	
+	<Rank Id="4" NextLevel="7000" Gold="6000" AllExp="14000" Brooch="4" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="300005090" Count="86400" Equip="1" Name="Cheytac M200 Tiger" />
+		<Item Id="601002023" Count="86400" Equip="1" Name="IMI Uzi 9mm 1D" />
+		<Item Id="702001014" Count="86400" Equip="1" Name="Machete de Combate 1D" />
+		<Item Id="803007018" Count="86400" Equip="1" Name="K-413 G 1D" />
+	</Rank>
+	
+	<Rank Id="5" NextLevel="9000" Gold="8000" AllExp="21000" Brooch="0" Insignia="6" Medal="0" BlueOrder="4">
+		<Item Id="1301284000" Count="1" Equip="1" Name="Pacote UP Nivel 5" />
+	</Rank>
+	
+	<Rank Id="6" NextLevel="11000" Gold="8000" AllExp="30000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001011" Count="86400" Equip="1" Name="Amok Kukri D. 1D" />
+		<Item Id="803007018" Count="86400" Equip="1" Name="K-413 G 1D" />
+	</Rank>
+	
+	<Rank Id="7" NextLevel="13500" Gold="8000" AllExp="41000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="200004075" Count="86400" Equip="1" Name="P90 G 1D" />
+		<Item Id="702015002" Count="86400" Equip="1" Name="Dual Knife D 1D" />
+		<Item Id="803007018" Count="86400" Equip="1" Name="K-413 G 1D" />
+	</Rank>
+	
+	<Rank Id="8" NextLevel="16000" Gold="10000" AllExp="54500" Brooch="0" Insignia="39" Medal="7" BlueOrder="9">
+		<Item Id="1301285000" Count="1" Equip="1" Name="Pacote UP Nivel 8" />
+	</Rank>
+	
+	<Rank Id="9" NextLevel="18500" Gold="10000" AllExp="70500" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="400006018" Count="86400" Equip="1" Name="SPAS-15 MSC 1D" />
+		<Item Id="702001041" Count="86400" Equip="1" Name="Espada Arabe 1D" />
+		<Item Id="803007018" Count="86400" Equip="1" Name="K-413 G 1D" />
+	</Rank>
+	
+	<Rank Id="10" NextLevel="21000" Gold="10000" AllExp="89000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="100003023" Count="86400" Equip="1" Name="M4A1 G. 1D" />
+		<Item Id="702001017" Count="86400" Equip="1" Name="Fang Blade. 1D" />
+	</Rank>
+	
+	<Rank Id="11" NextLevel="24000" Gold="10000" AllExp="110000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="200018013" Count="86400" Equip="1" Name="Dual Mini Uzi G. 1D" />
+		<Item Id="702001014" Count="86400" Equip="1" Name="Machete de Combate 1D" />
+	</Rank>
+	
+	<Rank Id="12" NextLevel="27000" Gold="12000" AllExp="134000" Brooch="0" Insignia="8" Medal="53" BlueOrder="12">
+		<Item Id="1301286000" Count="1" Equip="1" Name="Pacote UP Nivel 12" />
+	</Rank>
+	
+	<Rank Id="13" NextLevel="30000" Gold="12000" AllExp="161000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="400006015" Count="86400" Equip="1" Name="870MSC D 1D" />
+		<Item Id="702001021" Count="86400" Equip="1" Name="Keris 1D" />
+	</Rank>
+	
+	<Rank Id="14" NextLevel="33000" Gold="12000" AllExp="191000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1301287000" Count="1" Equip="1" Name="Pacote UP Nivel 14" />
+	</Rank>
+	
+	<Rank Id="15" NextLevel="36000" Gold="12000" AllExp="224000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="601002058" Count="259200" Equip="1" Name="C.Python Summer" />
+		<Item Id="1001001015" Count="259200" Equip="1" Name="D-Fox plus 3D" />
+	</Rank>
+	
+	<Rank Id="16" NextLevel="41000" Gold="12000" AllExp="260000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="601014006" Count="259200" Equip="1" Name="Dual D-Eagle D 3D" />
+		<Item Id="1001002018" Count="259200" Equip="1" Name="Hide Plus 3D" />
+	</Rank>
+	
+	<Rank Id="17" NextLevel="46000" Gold="14000" AllExp="301000" Brooch="0" Insignia="33" Medal="76" BlueOrder="22">
+		<Item Id="1301288000" Count="1" Equip="1" Name="Pacote UP Nivel 17" />
+	</Rank>
+	
+	<Rank Id="18" NextLevel="51000" Gold="14000" AllExp="347000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="601002021" Count="259200" Equip="1" Name="Glock 18 D 3D" />
+		<Item Id="1001002033" Count="259200" Equip="1" Name="Chou 3D" />
+	</Rank>
+	
+	<Rank Id="19" NextLevel="56000" Gold="14000" AllExp="398000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001025" Count="259200" Equip="1" Name="Pa 3D" />
+		<Item Id="1001002018" Count="259200" Equip="1" Name="Reinforced Combo Hide 3D" />
+	</Rank>
+	
+	<Rank Id="20" NextLevel="62000" Gold="14000" AllExp="454000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="601002013" Count="259200" Equip="1" Name="R.B 454 SS2M 3D" />
+		<Item Id="1001001017" Count="259200" Equip="1" Name="Viper Red plus 3D" />
+	</Rank>
+	
+	<Rank Id="21" NextLevel="68000" Gold="16000" AllExp="516000" Brooch="0" Insignia="25" Medal="49" BlueOrder="32">
+		<Item Id="1302061000" Count="1" Equip="1" Name="Pacote UP Nivel 21" />
+	</Rank>
+	
+	<Rank Id="22" NextLevel="74000" Gold="16000" AllExp="584000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="601002015" Count="259200" Equip="1" Name="R.B 454 SS8M 3D" />
+		<Item Id="1001001054" Count="259200" Equip="1" Name="Tarantula 2014 3D" />
+	</Rank>
+	
+	<Rank Id="23" NextLevel="80000" Gold="16000" AllExp="658000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001014" Count="259200" Equip="1" Name="Machete de Combate 3D" />
+		<Item Id="1104003021" Count="259200" Equip="1" Name="Mascara da Morte 3D" />
+	</Rank>
+	
+	<Rank Id="24" NextLevel="86000" Gold="16000" AllExp="738000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001021" Count="259200" Equip="1" Name="Keris 3D" />
+		<Item Id="1104003015" Count="259200" Equip="1" Name="Alienigina Azul 3D" />
+	</Rank>
+	
+	<Rank Id="25" NextLevel="93000" Gold="16000" AllExp="824000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001017" Count="259200" Equip="1" Name="Fang Blade 3D" />
+		<Item Id="1105003009" Count="259200" Equip="1" Name="Bone Pirocoptero 3D" />
+	</Rank>
+	
+	<Rank Id="26" NextLevel="100000" Gold="18000" AllExp="917000" Brooch="0" Insignia="13" Medal="82" BlueOrder="27">
+		<Item Id="1302062000" Count="1" Equip="1" Name="Pacote UP Nivel 26" />
+	</Rank>
+	
+	<Rank Id="27" NextLevel="107000" Gold="18000" AllExp="1017000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001041" Count="259200" Equip="1" Name="Espada Arabe 3D" />
+		<Item Id="1104003014" Count="259200" Equip="1" Name="Palhaco Assasino 3D" />
+	</Rank>
+	
+	<Rank Id="28" NextLevel="114000" Gold="18000" AllExp="1124000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001018" Count="259200" Equip="1" Name="Ballistic Knife 3D" />
+		<Item Id="702015002" Count="259200" Equip="1" Name="Dual Knife D 3D" />
+	</Rank>
+	
+	<Rank Id="29" NextLevel="121000" Gold="18000" AllExp="1238000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001009" Count="259200" Equip="1" Name="M-7 G. 3D" />
+		<Item Id="1104003013" Count="259200" Equip="1" Name="Cranio 3D" />
+	</Rank>
+	
+	<Rank Id="30" NextLevel="151000" Gold="18000" AllExp="1359000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001012" Count="259200" Equip="1" Name="Mini Axe D 3D" />
+		<Item Id="1104003012" Count="259200" Equip="1" Name="Golden Face 3D" />
+	</Rank>
+	
+	<Rank Id="31" NextLevel="181000" Gold="20000" AllExp="1510000" Brooch="0" Insignia="0" Medal="136" BlueOrder="41">
+		<Item Id="1302063000" Count="1" Equip="1" Name="Pacote UP Nivel 31" />
+	</Rank>
+	
+	<Rank Id="32" NextLevel="211000" Gold="20000" AllExp="1691000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001017" Count="259200" Equip="1" Name="Fang Blade 3D" />
+		<Item Id="1104003006" Count="259200" Equip="1" Name="Mascara de Fogo 3D" />
+	</Rank>
+	
+	<Rank Id="33" NextLevel="241000" Gold="20000" AllExp="1902000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="702001014" Count="259200" Equip="1" Name="Amok Kukri D. 3D" />
+		<Item Id="1104003007" Count="259200" Equip="1" Name="Mascara duas Cores 3D" />
+	</Rank>
+	
+	<Rank Id="34" NextLevel="271000" Gold="20000" AllExp="2143000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1300027003" Count="1" Equip="1" Name="Recarregamento Rapido" />
+	</Rank>
+	
+	<Rank Id="35" NextLevel="311000" Gold="20000" AllExp="2414000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1300031003" Count="1" Equip="1" Name="Bala de Ferro 3D" />
+	</Rank>
+	
+	<Rank Id="36" NextLevel="351000" Gold="22000" AllExp="2725000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1302064000" Count="1" Equip="1" Name="Pacote UP Nivel 36" />
+	</Rank>
+	
+	<Rank Id="37" NextLevel="391000" Gold="22000" AllExp="3076000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1300026003" Count="1" Equip="1" Name="Troca rapida 3D" />
+	</Rank>
+	
+	<Rank Id="38" NextLevel="413000" Gold="22000" AllExp="3467000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1300036003" Count="1" Equip="1" Name="Municao Hollow Point Fortificada 3D" />
+	</Rank>
+	
+	<Rank Id="39" NextLevel="471000" Gold="22000" AllExp="3898000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1300027003" Count="1" Equip="1" Name="Recarregamento Rapido 3D" />
+	</Rank>
+	
+	<Rank Id="40" NextLevel="521000" Gold="22000" AllExp="4369000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1300034003" Count="1" Equip="1" Name="C4 Speed Kit 3D" />
+	</Rank>
+	
+	<Rank Id="41" NextLevel="571000" Gold="24000" AllExp="4890000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1302065000" Count="1" Equip="1" Name="Pacote UP Nivel 41" />
+	</Rank>
+	
+	<Rank Id="42" NextLevel="621000" Gold="24000" AllExp="5461000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1300064003" Count="1" Equip="1" Name="50% Reducao de Respawn 3D" />
+	</Rank>
+	
+	<Rank Id="43" NextLevel="671000" Gold="24000" AllExp="6082000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1300032003" Count="1" Equip="1" Name="Municao Hollow Point 3D" />
+	</Rank>
+	
+	<Rank Id="44" NextLevel="721000" Gold="24000" AllExp="6753000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1301047000" Count="1" Equip="1" Name="Alteracao de Nick 1UND" />
+	</Rank>
+	
+	<Rank Id="45" NextLevel="781000" Gold="24000" AllExp="7474000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1301047000" Count="1" Equip="1" Name="Alteracao de Nick 1UND" />
+	</Rank>
+	
+	<Rank Id="46" NextLevel="851000" Gold="28000" AllExp="8255000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+		<Item Id="1001001286" Count="259200" Equip="1" Name="Viper General" />
+		<Item Id="1103003016" Count="1" Equip="3" Name="Beret General" />
+	</Rank>
+	
+	<Rank Id="47" NextLevel="931000" Gold="32000" AllExp="9106000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">	
+		<Item Id="300005082" Count="259200" Equip="1" Name="Barret M82A1 D 3D" />
+	</Rank>
+	
+	<Rank Id="48" NextLevel="1021000" Gold="36000" AllExp="10037000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+	
+	<Rank Id="49" NextLevel="1121000" Gold="40000" AllExp="11058000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+	
+	<Rank Id="50" NextLevel="100000000" Gold="60000" AllExp="12179000" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+	
+	<Rank Id="51" NextLevel="-1" Gold="0" AllExp="0" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+	
+	<Rank Id="52" NextLevel="-1" Gold="0" AllExp="0" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+	
+	<Rank Id="53" NextLevel="-1" Gold="0" AllExp="0" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+	
+	<Rank Id="54" NextLevel="-1" Gold="0" AllExp="0" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+	
+	<Rank Id="55" NextLevel="-1" Gold="0" AllExp="0" Brooch="0" Insignia="0" Medal="0" BlueOrder="0">
+	</Rank>
+</list>

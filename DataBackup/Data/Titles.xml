@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list>
+	<Title Id="1" List="1" Medals="0" Brooch="1" BlueOrder="0" Insignia="0" Rank="1" Slot="1" RequestT1="0" RequestT2="0">
+	</Title>
+	
+	<Title Id="2" List="1" Medals="0" Brooch="2" BlueOrder="0" Insignia="0" Rank="2" Slot="1" RequestT1="1" RequestT2="0">
+	</Title>
+	
+	<Title Id="3" List="1" Medals="0" Brooch="3" BlueOrder="0" Insignia="0" Rank="3" Slot="1" RequestT1="2" RequestT2="0">
+	</Title>
+	
+	<Title Id="4" List="1" Medals="0" Brooch="4" BlueOrder="0" Insignia="0" Rank="4" Slot="1" RequestT1="3" RequestT2="0">
+	</Title>
+		
+	<Title Id="5" List="2" Medals="0" Brooch="0" BlueOrder="1" Insignia="2" Rank="5" Slot="2" RequestT1="4" RequestT2="0">
+	</Title>
+	
+	<Title Id="6" List="4" Medals="0" Brooch="0" BlueOrder="1" Insignia="2" Rank="5" Slot="2" RequestT1="4" RequestT2="0">
+	</Title>
+	
+	<Title Id="7" List="6" Medals="0" Brooch="0" BlueOrder="1" Insignia="2" Rank="5" Slot="2" RequestT1="4" RequestT2="0">
+	</Title>
+	
+	<Title Id="8" List="2" Medals="0" Brooch="0" BlueOrder="1" Insignia="3" Rank="8" Slot="2" RequestT1="5" RequestT2="0">
+		<Item Id="100003014" Count="10" Equip="1" Name="SG 550 S. 10U" />
+	</Title>
+	
+	<Title Id="9" List="2" Medals="6" Brooch="0" BlueOrder="1" Insignia="0" Rank="12" Slot="2" RequestT1="8" RequestT2="0">
+	</Title>
+	
+	<Title Id="10" List="2" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="17" Slot="2" RequestT1="9" RequestT2="0">
+		<Item Id="100003013" Count="10" Equip="1" Name="G36C Ext. 10U" />
+	</Title>
+	
+	<Title Id="11" List="2" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="21" Slot="3" RequestT1="10" RequestT2="28">
+	</Title>
+	
+	<Title Id="12" List="2" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="26" Slot="3" RequestT1="11" RequestT2="0">
+		<Item Id="100003036" Count="10" Equip="1" Name="AUG A3 10U" />
+	</Title>
+	
+	<Title Id="13" List="2" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="31" Slot="3" RequestT1="11" RequestT2="0">
+		<Item Id="1103003001" Count="1" Equip="3" Name="Boina de Assalto" />
+	</Title>
+	
+	<Title Id="14" List="4" Medals="0" Brooch="0" BlueOrder="1" Insignia="9" Rank="8" Slot="2" RequestT1="6" RequestT2="0">
+		<Item Id="300005006" Count="10" Equip="1" Name="Dragunov G. 10U" />
+	</Title>
+	
+	<Title Id="15" List="4" Medals="0" Brooch="0" BlueOrder="1" Insignia="8" Rank="12" Slot="2" RequestT1="14" RequestT2="0">
+	</Title>
+
+	<Title Id="16" List="4" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="17" Slot="2" RequestT1="15" RequestT2="0">
+		<Item Id="300005024" Count="10" Equip="1" Name="PSG1 G 10U" />
+	</Title>
+	
+	<Title Id="17" List="4" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="21" Slot="3" RequestT1="16" RequestT2="32">
+	</Title>
+	
+	<Title Id="18" List="4" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="26" Slot="2" RequestT1="17" RequestT2="0">
+		<Item Id="300005005" Count="10" Equip="1" Name="L115A1 10U" />
+	</Title>
+	
+	<Title Id="19" List="4" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="31" Slot="3" RequestT1="18" RequestT2="0">
+		<Item Id="1103003003" Count="1" Equip="3" Name="Boina dos Snipers" />
+	</Title>
+	
+	<Title Id="20" List="6" Medals="0" Brooch="0" BlueOrder="1" Insignia="6" Rank="8" Slot="2" RequestT1="7" RequestT2="0">
+		<Item Id="200004007" Count="10" Equip="1" Name="MP5K G. 10U" />
+		<Item Id="200004009" Count="10" Equip="1" Name="Spectre W. 10U" />
+	</Title>
+	
+	<Title Id="21" List="6" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="12" Slot="2" RequestT1="20" RequestT2="0">
+	</Title>
+	
+	<Title Id="22" List="6" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="17" Slot="2" RequestT1="21" RequestT2="0">
+		<Item Id="200004011" Count="10" Equip="1" Name="P90 Ext. 10U" />
+	</Title>
+	
+	<Title Id="23" List="6" Medals="10" Brooch="0" BlueOrder="1" Insignia="12" Rank="21" Slot="3" RequestT1="22" RequestT2="42">
+	</Title>
+
+	<Title Id="24" List="6" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="26" Slot="3" RequestT1="23" RequestT2="0">
+		<Item Id="200004013" Count="10" Equip="1" Name="Kriss S.V 10U" />
+	</Title>
+	
+	<Title Id="25" List="6" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="31" Slot="3" RequestT1="24" RequestT2="0">
+		<Item Id="1103003002" Count="1" Equip="3" Name="Boina de SMG" />
+	</Title>
+	
+	<Title Id="26" List="3" Medals="1" Brooch="0" BlueOrder="1" Insignia="6" Rank="8" Slot="2" RequestT1="5" RequestT2="0">
+		<Item Id="702015001" Count="10" Equip="1" Name="Dual Knife 10U" />
+	</Title>
+	
+	<Title Id="27" List="3" Medals="6" Brooch="0" BlueOrder="1" Insignia="0" Rank="12" Slot="2" RequestT1="26" RequestT2="0">
+	</Title>
+	
+	<Title Id="28" List="3" Medals="10" Brooch="0" BlueOrder="1" Insignia="3" Rank="17" Slot="2" RequestT1="27" RequestT2="0">
+		<Item Id="702001004" Count="10" Equip="1" Name="Amok Kukri 10U" />
+	</Title>
+	
+	<Title Id="29" List="3" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="31" Slot="2" RequestT1="28" RequestT2="0">
+		<Item Id="702001007" Count="10" Equip="1" Name="Mini Axe 10U" />
+	</Title>
+	
+	<Title Id="30" List="5" Medals="0" Brooch="0" BlueOrder="1" Insignia="9" Rank="8" Slot="2" RequestT1="6" RequestT2="0">
+		<Item Id="601013001" Count="10" Equip="1" Name="P99 HAK 10U" />
+	</Title>
+	
+	<Title Id="31" List="5" Medals="6" Brooch="0" BlueOrder="1" Insignia="0" Rank="12" Slot="2" RequestT1="30" RequestT2="0">
+	</Title>
+
+    <Title Id="32" List="5" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="17" Slot="2" RequestT1="31" RequestT2="0">
+		<Item Id="601014001" Count="10" Equip="1" Name="Dual Handgun 10U" />
+		<Item Id="601014002" Count="10" Equip="1" Name="Dual D-Eagle 10U" />
+	</Title>
+	
+    <Title Id="33" List="5" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="26" Slot="2" RequestT1="32" RequestT2="0">
+	</Title>
+	
+	<Title Id="34" List="5" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="31" Slot="2" RequestT1="33" RequestT2="0">
+		<Item Id="1103003005" Count="1" Equip="3" Name="Boina de Pistoleiro" />
+	</Title>
+	
+	<Title Id="35" List="8" Medals="0" Brooch="0" BlueOrder="1" Insignia="6" Rank="8" Slot="2" RequestT1="7" RequestT2="0">
+		<Item Id="400006004" Count="10" Equip="1" Name="870MCS W. 10U" />
+	</Title>
+	
+	<Title Id="36" List="8" Medals="8" Brooch="0" BlueOrder="1" Insignia="0" Rank="12" Slot="2" RequestT1="35" RequestT2="0">
+	</Title>
+	
+	<Title Id="37" List="8" Medals="0" Brooch="0" BlueOrder="1" Insignia="10" Rank="17" Slot="2" RequestT1="36" RequestT2="0">
+		<Item Id="400006003" Count="10" Equip="1" Name="SPAS-15 10U" />
+	</Title>
+	
+	<Title Id="38" List="8" Medals="0" Brooch="0" BlueOrder="1" Insignia="12" Rank="26" Slot="2" RequestT1="37" RequestT2="0">
+	</Title>
+	
+	<Title Id="39" List="8" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="31" Slot="2" RequestT1="38" RequestT2="0">
+		<Item Id="1103003004" Count="1" Equip="3" Name="Boina de Shotgun" />
+	</Title>
+	
+    <Title Id="40" List="7" Medals="6" Brooch="0" BlueOrder="1" Insignia="0" Rank="8" Slot="2" RequestT1="7" RequestT2="0">
+		<Item Id="803007004" Count="10" Equip="1" Name="C-5 10U" />
+	</Title>
+	
+	<Title Id="41" List="7" Medals="7" Brooch="0" BlueOrder="1" Insignia="0" Rank="12" Slot="2" RequestT1="40" RequestT2="0">
+	</Title>
+	
+	<Title Id="42" List="7" Medals="0" Brooch="0" BlueOrder="1" Insignia="12" Rank="17" Slot="2" RequestT1="41" RequestT2="0">
+		<Item Id="904007005" Count="10" Equip="1" Name="WP Smoke 10U" />
+	</Title>
+	
+	<Title Id="43" List="7" Medals="0" Brooch="0" BlueOrder="1" Insignia="12" Rank="21" Slot="3" RequestT1="42" RequestT2="0">
+	</Title>
+	
+	<Title Id="44" List="7" Medals="10" Brooch="0" BlueOrder="1" Insignia="0" Rank="31" Slot="3" RequestT1="43" RequestT2="0">
+	</Title>
+</list>

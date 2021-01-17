@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="21"> ;Caixa Rangemaster
+<item index="0" id="300005021" count="86400" equip="1" percent="40" special="false"/> ;Rangemaster .338 1D
+<item index="1" id="300005022" count="86400" equip="1" percent="60" special="false"/> ;Rangemaster 7.62 1D
+<item index="2" id="300005023" count="86400" equip="1" percent="80" special="false"/> ;Rangemaster 7.62 STBY 1D
+</list>

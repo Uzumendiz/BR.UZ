@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list count="19"> ;Caixa Karambit
+
+<item index="0" id="702001147" count="7776000" equip="1" percent="30" special="false"/> ; Karambit 90D
+<item index="1" id="702001147" count="5184000" equip="1" percent="40" special="false"/> ; Karambit 60D
+<item index="10" id="702001147" count="2592000" equip="1" percent="50" special="false"/> ; Karambit 30D
+<item index="3" id="702001147" count="864000" equip="1" percent="70" special="false"/> ; Karambit 10D
+<item index="9" id="702001147" count="604800" equip="1" percent="80" special="false"/> ; Karambit 7D
+<item index="4" id="702001147" count="432000" equip="1" percent="90" special="false"/> ; Karambit 5D
+<item index="5" id="702001147" count="259200" equip="1" percent="100" special="false"/> ; Karambit 3D
+
+<item index="11" id="702001147" count="604800" equip="1" percent="70" special="false"/> ; Karambit + Recarregamento Rapido 7D
+<item index="11" id="1300027007" count="1" equip="1" percent="70" special="false"/> ; Karambit + Recarregamento Rapido 7D
+
+<item index="12" id="702001147" count="86400" equip="1" percent="100" special="false"/> ; Karambit + Recarregamento Rapido 1D
+<item index="12" id="1300027001" count="1" equip="1" percent="100" special="false"/> ; Karambit + Recarregamento Rapido 1D
+
+<item index="13" id="702001147" count="604800" equip="1" percent="70" special="false"/> ; Karambit + Municao Hollow Point 7D
+<item index="13" id="1300032007" count="1" equip="1" percent="70" special="false"/> ; Karambit + Municao Hollow Point 7D
+
+<item index="14" id="702001147" count="86400" equip="1" percent="100" special="false"/> ; Karambit + Municao Hollow Point 1D
+<item index="14" id="1300032001" count="1" equip="1" percent="100" special="false"/> ; Karambit + Municao Hollow Point 1D
+
+<item index="15" id="702001147" count="604800" equip="1" percent="70" special="false"/> ; Karambit + Colete a Prova de Balas 7D
+<item index="15" id="1300044007" count="1" equip="1" percent="70" special="false"/> ; Karambit + Colete a Prova de Balas 7D
+
+<item index="16" id="702001147" count="86400" equip="1" percent="100" special="false"/> ; Karambit + Colete a Prova de Balas 1D
+<item index="16" id="1300044001" count="1" equip="1" percent="100" special="false"/> ; Karambit + Colete a Prova de Balas 1D
+
+<item index="17" id="702001147" count="604800" equip="1" percent="70" special="false"/> ; Karambit + EXP 50% 7D
+<item index="17" id="1300003007" count="1" equip="1" percent="70" special="false"/> ; Karambit + EXP 50% 7D
+
+<item index="18" id="702001147" count="86400" equip="1" percent="100" special="false"/> ; Karambit + EXP 50% 1D
+<item index="18" id="1300003001" count="1" equip="1" percent="100" special="false"/> ; Karambit + EXP 50% 1D
+
+<item index="19" id="702001147" count="604800" equip="1" percent="70" special="false"/> ; Karambit + Reducao de Respawn 50% 7D
+<item index="19" id="1300064007" count="1" equip="1" percent="70" special="false"/> ; Karambit + Reducao de Respawn 50% 7D
+
+<item index="2" id="702001147" count="86400" equip="1" percent="100" special="false"/> ; Karambit + Reducao de Respawn 50% 1D
+<item index="2" id="1300064001" count="1" equip="1" percent="100" special="false"/> ; Karambit + Reducao de Respawn 50% 1D
+
+<item index="7" id="702001147" count="86400" equip="1" percent="50" special="false"/> ; Karambit + Caixa de Facas Premium 1U
+<item index="7" id="1302379000" count="1" equip="1" percent="50" special="false"/> ; Karambit + Caixa de Facas Premium 1U
+
+<item index="8" id="702001147" count="86400" equip="1" percent="30" special="false"/> ; Karambit + Caixa de Facas Premium 3U
+<item index="8" id="1302379000" count="3" equip="1" percent="30" special="false"/> ; Karambit + Caixa de Facas Premium 3U
+
+<item index="6" id="702001184" count="15552000" equip="1" percent="20" special="true"/> ; Karambit CNPB-T5 180D
+
+</list>                                                                                  

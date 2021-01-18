@@ -5,7 +5,7 @@ using System.Net;
 using System.Security.Cryptography;
 using System.Text;
 
-/* 
+/*
     [PORTUGUESE BRAZIL]
     Este código-fonte é de autoria da <BR.UZ/>, MomzGames, ExploitTeam.
 

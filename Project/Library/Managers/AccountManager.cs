@@ -581,5 +581,48 @@ namespace PointBlank
             }
             return account;
         }
+
+        public static Account SearchAccountDBAdmin(string login)
+        {
+            Account account = null;
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(SQLManager.ConnectionString))
+                using (NpgsqlCommand command = connection.CreateCommand())
+                {
+                    connection.Open();
+                    command.Parameters.AddWithValue("@login", login);
+                    command.CommandText = $"SELECT * FROM accounts WHERE username=@login LIMIT 1";
+                    using (NpgsqlDataReader data = command.ExecuteReader())
+                    {
+                        while (data.Read())
+                        {
+                            account = new Account();
+                            account.playerId = data.GetInt64(0);
+                            account.token = data.GetString(1);
+                            account.key = data.GetInt64(2);
+                            account.login = data.GetString(3);
+                            account.password = data.GetString(4);
+                            account.nickname = data.GetString(6);
+                            account.exp = data.GetInt32(8);
+                            account.rankId = (byte)data.GetInt32(9);
+                            account.gold = data.GetInt32(10);
+                            account.cash = data.GetInt32(11);
+                            account.isOnline = data.GetBoolean(12);
+                            account.access = (AccessLevelEnum)data.GetInt32(13);
+                            account.pccafe = (byte)data.GetInt32(14);
+                            account.pccafeDate = data.GetInt32(15);
+                        }
+                        data.Close();
+                        connection.Close();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Exception(ex);
+            }
+            return account;
+        }
     }
 }

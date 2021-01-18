@@ -18,6 +18,11 @@
             WriteQ(player.playerId);
             WriteD(room.roomId);
             WriteC((byte)room.mapId);
+            if (!IsCreate)
+            {
+                WriteC((byte)room.mapName.Length);
+                WriteS(room.mapName, room.mapName.Length);
+            }
             WriteC((byte)room.roomName.Length);
             WriteS(room.roomName, room.roomName.Length);
             WriteC(room.leaderSlot == player.slotId); //Is Leader

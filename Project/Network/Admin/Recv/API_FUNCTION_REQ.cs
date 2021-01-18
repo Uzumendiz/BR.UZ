@@ -7,27 +7,25 @@ namespace PointBlank.Api
     public class API_FUNCTION_REQ : ApiPacketReader
     {
         private byte type;
-        private long playerId;
         public override void ReadImplement()
         {
             type = ReadByte();
-            playerId = ReadLong();
         }
 
         public override void RunImplement()
         {
-            Account player = AccountManager.GetAccount(playerId, true);
-            if (player == null)
-            {
-                Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
-                return;
-            }
-            Room room = player.room;
             string response = "";
             switch (type)
             {
                 case 1: //Kick Player
                     {
+                        long playerId = ReadLong();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
                         player.SendPacket(new AUTH_ACCOUNT_KICK_PAK(2));
                         player.Close(1000, true);
                         response = $"Você desconectou o jogador do servidor. Id: {player.playerId} Nick: {player.nickname}";
@@ -64,8 +62,15 @@ namespace PointBlank.Api
                     }
                 case 4: //Set Pccafe Basic
                     {
+                        long playerId = ReadLong();
                         int days = ReadInt();
                         int dateNow = int.Parse(DateTime.Now.AddDays(days).ToString("yyMMddHHmm"));
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
                         if (player.UpdatePccafe(1, dateNow, player.cash + 45000, player.gold + 50000))
                         {
                             player.cash += 45000;
@@ -86,8 +91,15 @@ namespace PointBlank.Api
                     }
                 case 5: //Set Pccafe Plus
                     {
+                        long playerId = ReadLong();
                         int days = ReadInt();
                         int dateNow = int.Parse(DateTime.Now.AddDays(days).ToString("yyMMddHHmm"));
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
                         if (player.UpdatePccafe(2, dateNow, player.cash + 75000, player.gold + 80000))
                         {
                             player.cash += 75000;
@@ -112,7 +124,15 @@ namespace PointBlank.Api
                     }
                 case 7: //Set Nickname
                     {
+                        long playerId = ReadLong();
                         string nickname = ReadString(ReadByte());
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
+                        Room room = player.room;
                         if (player.nickname.Length > Settings.NickMaxLength || player.nickname.Length < Settings.NickMinLength)
                         {
                             response = $"Este nickname ({nickname}) está fora dos padrões de tamanho.";
@@ -205,7 +225,15 @@ namespace PointBlank.Api
                     }
                 case 10: //Add Cash
                     {
+                        long playerId = ReadLong();
                         int valor = ReadInt();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
+                        Room room = player.room;
                         long cashCalculated = player.cash + valor;
                         if (cashCalculated > 999999999)
                         {
@@ -229,7 +257,14 @@ namespace PointBlank.Api
                     }
                 case 11: //Add Gold
                     {
+                        long playerId = ReadLong();
                         int valor = ReadInt();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
                         long goldCalculated = player.gold + valor;
                         if (goldCalculated > 999999999)
                         {
@@ -253,6 +288,14 @@ namespace PointBlank.Api
                     }
                 case 12: //Battle End by Player Selected
                     {
+                        long playerId = ReadLong();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
+                        Room room = player.room;
                         if (room != null)
                         {
                             if (room.IsPreparing())
@@ -273,8 +316,16 @@ namespace PointBlank.Api
                     }
                 case 13: //Battle End To Specific Room in Specific Channel
                     {
+                        long playerId = ReadLong();
                         int channelId = ReadInt();
                         int roomId = ReadInt();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
+                        Room room = player.room;
                         Channel channel = ServersManager.GetChannel(channelId);
                         if (channel != null)
                         {
@@ -300,7 +351,15 @@ namespace PointBlank.Api
                     }
                 case 14:
                     {
+                        long playerId = ReadLong();
                         int stageType = ReadInt();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
+                        Room room = player.room;
                         if (room != null)
                         {
                             room.mode = (RoomTypeEnum)stageType;
@@ -315,7 +374,15 @@ namespace PointBlank.Api
                     }
                 case 15:
                     {
+                        long playerId = ReadLong();
                         int special = ReadInt();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
+                        Room room = player.room;
                         if (room != null)
                         {
                             room.modeSpecial = (RoomModeSpecial)special;
@@ -330,7 +397,15 @@ namespace PointBlank.Api
                     }
                 case 16:
                     {
+                        long playerId = ReadLong();
                         int flags = ReadInt();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            return;
+                        }
+                        Room room = player.room;
                         if (room != null)
                         {
                             room.weaponsFlag = (byte)flags;

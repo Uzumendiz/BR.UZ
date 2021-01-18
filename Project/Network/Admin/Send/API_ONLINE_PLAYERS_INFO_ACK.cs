@@ -34,10 +34,9 @@ namespace PointBlank.Api
                 if (room != null)
                 {
                     WriteD(room.roomId);
+                    WriteC((byte)room.mapId);
                     WriteC((byte)room.roomName.Length);
-                    WriteC((byte)room.mapName.Length);
                     WriteS(room.roomName, room.roomName.Length);
-                    WriteS(room.mapName, room.mapName.Length);
                     WriteC(room.leaderSlot == player.slotId); //Is Leader
                 }
                 else

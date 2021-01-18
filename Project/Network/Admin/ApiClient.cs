@@ -43,6 +43,7 @@ namespace PointBlank
         public int SessionId;
         private int SessionShift;
         public MachineModel machine;
+        public Account admin;
         public bool ConnectionIsClosed = false;
         private bool Disposed = false;
         private SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
@@ -183,7 +184,7 @@ namespace PointBlank
                 ApiPacketReader Packet = null;
                 switch (Opcode)
                 {
-                    case 1: Packet = new API_MACHINE_DATA_REQ(); break;
+                    case 1: Packet = new API_LOGIN_ADMIN_REQ(); break;
                     case 2: Packet = new API_GET_ONLINE_PLAYERS_REQ(); break;
                     case 3: Packet = new API_GET_SETTINGS_INFO_REQ(); break;
                     case 4: Packet = new API_FUNCTION_REQ(); break;

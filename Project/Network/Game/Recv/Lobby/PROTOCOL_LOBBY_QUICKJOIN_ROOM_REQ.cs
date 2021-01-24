@@ -78,6 +78,7 @@ namespace PointBlank.Game
                         room.SendPacketToPlayers(packet, player.playerId);
                     }
                     client.SendPacket(new LOBBY_JOIN_ROOM_PAK(0, player, leader));
+                    ApiManager.SendPacketToAllClients(new API_USER_ROOM_ENTER_OR_CREATE_ACK(player, room, false));
                 }
                 else
                 {

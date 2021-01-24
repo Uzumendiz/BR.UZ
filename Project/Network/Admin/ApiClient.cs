@@ -44,6 +44,8 @@ namespace PointBlank
         private int SessionShift;
         public MachineModel machine;
         public Account admin;
+        public int lastPlayerPage;
+        public int lastRoomPage;
         public bool ConnectionIsClosed = false;
         private bool Disposed = false;
         private SafeHandle handle = new SafeFileHandle(IntPtr.Zero, true);
@@ -190,8 +192,10 @@ namespace PointBlank
                     case 4: Packet = new API_FUNCTION_REQ(); break;
                     case 5: Packet = new API_SETTINGS_CHANGE_REQ(); break;
                     case 6: Packet = new API_RELOAD_CACHE_REQ(); break;
-                    case 7: Packet = new API_GET_AUTH_REQ(); break;
-
+                    case 7: Packet = new API_GET_SERVER_INFO_REQ(); break;
+                    case 8: Packet = new API_GET_ROOM_LIST_REQ(); break;
+                    case 9: Packet = new API_GET_ROOM_INFO_REQ(); break;
+                    
                     case 20: Packet = new API_BATTLE_TEST_REQ(); break;
 
                     default:

@@ -7,6 +7,7 @@ namespace PointBlank.Api
     public class API_FUNCTION_REQ : ApiPacketReader
     {
         private byte type;
+        private int error = 1;
         public override void ReadImplement()
         {
             type = ReadByte();
@@ -24,6 +25,7 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         player.SendPacket(new AUTH_ACCOUNT_KICK_PAK(2));
@@ -69,6 +71,7 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         if (player.UpdatePccafe(1, dateNow, player.cash + 45000, player.gold + 50000))
@@ -86,6 +89,7 @@ namespace PointBlank.Api
                         else
                         {
                             response = "Não foi possivel atualizar Pccafe Basic na database.";
+                            error = 0x8000;
                         }
                         break;
                     }
@@ -98,6 +102,7 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         if (player.UpdatePccafe(2, dateNow, player.cash + 75000, player.gold + 80000))
@@ -115,6 +120,7 @@ namespace PointBlank.Api
                         else
                         {
                             response = "Não foi possivel atualizar Pccafe Plus na database.";
+                            error = 0x8000;
                         }
                         break;
                     }
@@ -130,16 +136,19 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         Room room = player.room;
                         if (player.nickname.Length > Settings.NickMaxLength || player.nickname.Length < Settings.NickMinLength)
                         {
                             response = $"Este nickname ({nickname}) está fora dos padrões de tamanho.";
+                            error = 0x8000;
                         }
-                        else if (AccountManager.CheckNicknameExist(player.nickname).Result)
+                        else if (AccountManager.CheckNicknameExist(nickname).Result)
                         {
                             response = $"Este nickname ({nickname}) já existe.";
+                            error = 0x8000;
                         }
                         else if (player.ExecuteQuery($"UPDATE accounts SET nickname='{player.nickname}' WHERE id='{player.playerId}'"))
                         {
@@ -166,6 +175,7 @@ namespace PointBlank.Api
                         else
                         {
                             response = $"Falha ao atualizar o nickname ({nickname}) na database.";
+                            error = 0x8000;
                         }
                         break;
                     }
@@ -175,6 +185,7 @@ namespace PointBlank.Api
                         if (message.Length >= 1024)
                         {
                             response = $"Não é possivel mandar uma mensagem muito grande.";
+                            error = 0x8000;
                         }
                         else
                         {
@@ -195,6 +206,7 @@ namespace PointBlank.Api
                         if (message.Length >= 1024)
                         {
                             response = $"Não é possivel mandar uma mensagem muito grande.";
+                            error = 0x8000;
                         }
                         else
                         {
@@ -214,11 +226,13 @@ namespace PointBlank.Api
                                 else
                                 {
                                     response = $"Sala ({roomId}) inexistente neste canal.";
+                                    error = 0x8000;
                                 }
                             }
                             else
                             {
                                 response = $"Canal ({channel.id}) inexistente.";
+                                error = 0x8000;
                             }
                         }
                         break;
@@ -231,13 +245,14 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
-                        Room room = player.room;
                         long cashCalculated = player.cash + valor;
                         if (cashCalculated > 999999999)
                         {
                             response = "Não é possivel adicionar esse valor de cash para este jogador no momento.";
+                            error = 0x8000;
                         }
                         else
                         {
@@ -251,6 +266,7 @@ namespace PointBlank.Api
                             else
                             {
                                 response = "Não foi possivel atualizar o cash para este jogador.";
+                                error = 0x8000;
                             }
                         }
                         break;
@@ -263,12 +279,14 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         long goldCalculated = player.gold + valor;
                         if (goldCalculated > 999999999)
                         {
                             response = "Não é possivel adicionar esse valor de gold para este jogador no momento.";
+                            error = 0x8000;
                         }
                         else
                         {
@@ -282,6 +300,7 @@ namespace PointBlank.Api
                             else
                             {
                                 response = "Não foi possivel atualizar o gold para este jogador.";
+                                error = 0x8000;
                             }
                         }
                         break;
@@ -293,6 +312,7 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         Room room = player.room;
@@ -306,11 +326,13 @@ namespace PointBlank.Api
                             else
                             {
                                 response = "Não foi possivel finalizar a partida no momento.";
+                                error = 0x8000;
                             }
                         }
                         else
                         {
                             response = "Você precisa estar presente em uma sala.";
+                            error = 0x8000;
                         }
                         break;
                     }
@@ -323,6 +345,7 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         Room room = player.room;
@@ -340,16 +363,18 @@ namespace PointBlank.Api
                                 else
                                 {
                                     response = "Não foi possivel finalizar a partida no momento.";
+                                    error = 0x8000;
                                 }
                             }
                             else
                             {
                                 response = "Você precisa estar presente em uma sala.";
+                                error = 0x8000;
                             }
                         }
                         break;
                     }
-                case 14:
+                case 14: //Change Room Mode
                     {
                         long playerId = ReadLong();
                         int stageType = ReadInt();
@@ -357,6 +382,7 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         Room room = player.room;
@@ -369,10 +395,11 @@ namespace PointBlank.Api
                         else
                         {
                             response = "Você precisa estar presente em uma sala.";
+                            error = 0x8000;
                         }
                         break;
                     }
-                case 15:
+                case 15: //Change Room ModeSpecial
                     {
                         long playerId = ReadLong();
                         int special = ReadInt();
@@ -380,6 +407,7 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         Room room = player.room;
@@ -392,10 +420,11 @@ namespace PointBlank.Api
                         else
                         {
                             response = "Você precisa estar presente em uma sala.";
+                            error = 0x8000;
                         }
                         break;
                     }
-                case 16:
+                case 16: //Change Room WeaponsFlag
                     {
                         long playerId = ReadLong();
                         int flags = ReadInt();
@@ -403,6 +432,7 @@ namespace PointBlank.Api
                         if (player == null)
                         {
                             Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
                             return;
                         }
                         Room room = player.room;
@@ -415,19 +445,131 @@ namespace PointBlank.Api
                         else
                         {
                             response = "Você precisa estar presente em uma sala.";
+                            error = 0x8000;
                         }
                         break;
                     }
-                case 17:
+                case 17: //Change Rank
+                    {
+                        long playerId = ReadLong();
+                        byte rank = ReadByte();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
+                            return;
+                        }
+                        if (rank > 55 || rank < 0)
+                        {
+                            response = "O rank escolhido é inválido.";
+                            error = 0x8000;
+                        }
+                        else if (player.rankId == rank)
+                        {
+                            response = "Você já possui este rank atualmente.";
+                            error = 0x8000;
+                        }
+                        else if (player.ExecuteQuery($"UPDATE accounts SET rank='{rank}' WHERE id='{player.playerId}'"))
+                        {
+                            player.rankId = rank;
+                            int itemIdToRemove = 0;
+                            if (player.rankId == 8)
+                            {
+                                itemIdToRemove = 1301268000;
+                            }
+                            else if (player.rankId == 12)
+                            {
+                                itemIdToRemove = 1301271000;
+                            }
+                            else if (player.rankId == 14)
+                            {
+                                itemIdToRemove = 1301272000;
+                            }
+                            else if (player.rankId == 17)
+                            {
+                                itemIdToRemove = 1301276000;
+                            }
+                            else if (player.rankId == 26)
+                            {
+                                itemIdToRemove = 1302040000;
+                            }
+                            else if (player.rankId == 31)
+                            {
+                                itemIdToRemove = 1302041000;
+                            }
+                            else if (player.rankId == 36)
+                            {
+                                itemIdToRemove = 1302042000;
+                            }
+                            else if (player.rankId == 41)
+                            {
+                                itemIdToRemove = 1302043000;
+                            }
+                            if (itemIdToRemove != 0)
+                            {
+                                ItemsModel item = player.inventory.GetItem(itemIdToRemove);
+                                if (item != null)
+                                {
+                                    if (player.DeleteItem(item.objectId))
+                                    {
+                                        player.inventory.RemoveItem(item);
+                                    }
+                                    player.SendPacket(new INVENTORY_ITEM_EXCLUDE_PAK(1, item.objectId));
+                                }
+                            }
+                            List<ItemsModel> items = RankManager.GetAwards(player.rankId);
+                            if (items.Count > 0)
+                            {
+                                player.SendPacket(new PROTOCOL_INVENTORY_ITEM_CREATE_ACK(1, player, items));
+                            }
+                            RankModel NextRank = RankManager.GetRank(player.rankId);
+                            if (NextRank != null)
+                            {
+                                int Experience = player.exp - NextRank.onNextLevel - NextRank.onAllExp + NextRank.onAllExp;
+                                player.exp = Experience;
+                                player.SendPacket(new PROTOCOL_BASE_RANK_UP_ACK(rank, NextRank.onNextLevel));
+                            }
+                            Room room = player.room;
+                            if (room != null)
+                            {
+                                room.UpdateSlotsInfo();
+                            }
+                            response = $"Seu rank foi alterado para {rank}.";
+                        }
+                        else
+                        {
+                            response = "Falha ao atualizar o rank na database.";
+                            error = 0x8000;
+                        }
+                        break;
+                    }
+                case 18: //Nick History
                     {
                         break;
                     }
-                case 18:
+                case 19: //ADD ITEM
                     {
-                        break;
-                    }
-                case 19:
-                    {
+                        long playerId = ReadLong();
+                        int itemId = ReadInt();
+                        Account player = AccountManager.GetAccount(playerId, true);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
+                            return;
+                        }
+                        if (itemId < 100000000)
+                        {
+                            response = "Este item é inválido.";
+                        }
+                        else
+                        {
+                            int category = Utilities.GetItemCategory(itemId);
+                            player.SendPacket(new PROTOCOL_INVENTORY_ITEM_CREATE_ACK(1, player, new ItemsModel(itemId, category, "Command item", (byte)(category == 3 ? 1 : 3), 1)));
+                            player.SendPacket(new SERVER_MESSAGE_ITEM_RECEIVE_PAK(0));
+                            response = $"O item {itemId} foi adicionado com sucesso, verifique seu inventário.";
+                        }
                         break;
                     }
                 case 20:
@@ -436,7 +578,7 @@ namespace PointBlank.Api
                     }
             }
             Logger.Warning(response);
-            client.SendPacket(new API_RESULT_FUNCTION_ACK(response));
+            client.SendPacket(new API_RESULT_FUNCTION_ACK(error, type, response));
         }
     }
 }

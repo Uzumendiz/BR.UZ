@@ -4,7 +4,7 @@
     {
         public override void Write()
         {
-            WriteH(2); //Opcode
+            WriteH(10); //Opcode
             WriteC((byte)Settings.IPInternal.Length);
             WriteS(Settings.IPInternal, Settings.IPInternal.Length);
             WriteC((byte)Settings.IPExternal.Length);

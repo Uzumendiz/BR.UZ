@@ -126,6 +126,31 @@ namespace PointBlank.Api
                     }
                 case 6: //Block user
                     {
+                        DateTime date = DateTime.Now;
+                        UserBlock user = new UserBlock
+                        {
+                            ipAddress = ReadString(ReadByte()),
+                            macAddress = ReadString(ReadByte()),
+                            biosId = ReadString(ReadByte()),
+                            diskId = ReadString(ReadByte()),
+                            videoId = ReadString(ReadByte()),
+                            startDate = date,
+                            endDate = date.AddDays(ReadInt()),
+                            reason = ReadString(ReadByte()),
+                            linkVideo = ReadString(ReadByte()),
+                            linkPrintScreen = ReadString(ReadByte()),
+                            comment = ReadString(ReadByte()),
+                            userId = ReadLong()
+                        };
+                        if (ServerBlockManager.AddBlock(user, client.admin))
+                        {
+                            response = $"Usuário bloqueado.";
+                        }
+                        else
+                        {
+                            response = $"Falha ao bloquear o usuário.";
+                            error = 0x8000;
+                        }
                         break;
                     }
                 case 7: //Set Nickname
@@ -153,6 +178,10 @@ namespace PointBlank.Api
                         else if (player.ExecuteQuery($"UPDATE accounts SET nickname='{player.nickname}' WHERE id='{player.playerId}'"))
                         {
                             player.nickname = nickname;
+                            if (!NickHistoryManager.CreateHistory(player.playerId, player.nickname, nickname, "Admin Change Nickname"))
+                            {
+                                Logger.Analyze($" [API_FUNCTION_REQ] Não foi possivel salvar o histórico de nome. PlayerId: {player.playerId} Nickname: {nickname} Motivo: First nick.");
+                            }
                             player.SendPacket(new PROTOCOL_AUTH_CHANGE_NICKNAME_ACK(player.nickname));
                             if (room != null)
                             {
@@ -546,6 +575,19 @@ namespace PointBlank.Api
                     }
                 case 18: //Nick History
                     {
+                        int type = ReadByte();
+                        if (type == 0)
+                        {
+                            string nickname = ReadString(ReadByte());
+                            NickHistoryManager.GetHistory(nickname, type);
+                            response = "Buscando o histórico de nickname pelo nickname.";
+                        }
+                        else
+                        {
+                            long playerId = ReadLong();
+                            NickHistoryManager.GetHistory(playerId, type);
+                            response = "Buscando o histórico de nickname pelo playerId.";
+                        }
                         break;
                     }
                 case 19: //ADD ITEM

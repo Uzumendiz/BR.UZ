@@ -25,7 +25,6 @@ namespace PointBlank.Auth
                 player.LoadPlayerTitles();
                 player.LoadPlayerBonus();
                 player.LoadPlayerEvents();
-                player.LoadPlayerConfigs();
                 player.status.SetData(4294967295, player.playerId);
                 player.status.UpdateServer(0); //0 = Auth(Ainda não selecionou o servidor) Game = Settings.ServerId
                 player.DiscountPlayerItems();

@@ -1,4 +1,4 @@
-﻿namespace PointBlank
+﻿namespace PointBlank.Api
 {
     public class API_USER_ROOM_ENTER_OR_CREATE_ACK : ApiPacketWriter
     {

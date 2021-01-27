@@ -232,6 +232,7 @@
     <Compile Include="Network\Admin\Recv\API_FUNCTION_REQ.cs" />
     <Compile Include="Network\Admin\Recv\API_GET_ONLINE_PLAYERS_REQ.cs" />
     <Compile Include="Network\Admin\Recv\API_GET_ROOM_LIST_REQ.cs" />
+    <Compile Include="Network\Admin\Recv\API_GET_ROOM_SLOT_INFO_REQ.cs" />
     <Compile Include="Network\Admin\Recv\API_GET_SERVER_INFO_REQ.cs" />
     <Compile Include="Network\Admin\Recv\API_GET_SETTINGS_INFO_REQ.cs" />
     <Compile Include="Network\Admin\Recv\API_GET_ROOM_INFO_REQ.cs" />
@@ -240,12 +241,14 @@
     <Compile Include="Network\Admin\Recv\API_SETTINGS_CHANGE_REQ.cs" />
     <Compile Include="Network\Admin\Send\API_AUTH_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_BATTLE_TESTE_RESULT_ACK.cs" />
+    <Compile Include="Network\Admin\Send\API_CHANNEL_CHATTING_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_LOGIN_ADMIN_RESULT_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_ONLINE_PLAYERS_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_RELOAD_CACHE_RESULT_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_RESULT_FUNCTION_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_ROOM_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_ROOM_LIST_ACK.cs" />
+    <Compile Include="Network\Admin\Send\API_ROOM_SLOT_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_SERVER_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_USER_DISCONNECT_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_USER_ENTER_ACK.cs" />

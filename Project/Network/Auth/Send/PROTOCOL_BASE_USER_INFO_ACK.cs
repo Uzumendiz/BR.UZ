@@ -289,26 +289,46 @@ namespace PointBlank.Auth
 
             WriteVisitEvent(eventVisit);
 
-            WriteD(int.Parse(DateTime.Now.ToString("yyMMddHHmm"))); //DataNow By Server
+            //WriteD(int.Parse(DateTime.Now.ToString("yyMMddHHmm"))); //DataNow By Server
 
-            WriteS("10.120.1.44", 256);
-            WriteH(0); //8085
+            //WriteS("10.120.1.44", 256);
+            //WriteH(0); //8085
+            //WriteH(0);
+
+            //WriteC(0); //Presentes
+            //WriteH(1); //1
+            //WriteC(0);
+
+            //WriteC(1);
+            //WriteC(7); //6
+
+            //WriteC(4); //Vip
+            //WriteC(1); //Posição do item VIP na loja
+            //WriteC(1);
+            //WriteC(2);
+            //WriteC(5);
+            //WriteC(3);
+            //WriteC(6);
+
+            WriteD(uint.Parse(DateTime.Now.ToString("yyMMddHHmm")));//DataNow By Server
+            //writeB(new byte[256]);
+            WriteS("10.120.1.44", 256); //?
+            WriteH(8085); //8085
+
+            WriteC(1); //gift system
+
             WriteH(0);
-
-            WriteC(0); //Presentes
-            WriteH(1); //1
+            WriteH(1);
             WriteC(0);
 
+            WriteH(1);
             WriteC(1);
-            WriteC(7); //6
-
-            WriteC(4); //Vip
-            WriteC(1); //Posição do item VIP na loja
-            WriteC(1);
+            WriteC(6);
+            WriteH(4);
             WriteC(2);
+            WriteC(1);
             WriteC(5);
             WriteC(3);
-            WriteC(6);
 
             charas = null;
             weapons = null;

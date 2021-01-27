@@ -43,6 +43,13 @@ namespace PointBlank
         public string videoId;
         public DateTime startDate;
         public DateTime endDate;
+        public string reason;
+        public string linkVideo;
+        public string linkPrintScreen;
+        public string comment;
+        public long userId;
+        public long adminId;
+        public string adminMac;
     }
     public class ServerBlockManager
     {
@@ -128,6 +135,46 @@ namespace PointBlank
             {
                 Logger.Exception(ex);
             }
+        }
+
+        public static bool AddBlock(UserBlock user, Account admin)
+        {
+            try
+            {
+                using (NpgsqlConnection connection = new NpgsqlConnection(SQLManager.ConnectionString))
+                using (NpgsqlCommand command = connection.CreateCommand())
+                {
+                    connection.Open();
+                    command.Parameters.AddWithValue("@address", user.ipAddress);
+                    command.Parameters.AddWithValue("@mac", user.macAddress);
+                    command.Parameters.AddWithValue("@hardware_id", user.hardwareId);
+                    command.Parameters.AddWithValue("@bios_id", user.biosId);
+                    command.Parameters.AddWithValue("@disk_id", user.diskId);
+                    command.Parameters.AddWithValue("@video_id", user.videoId);
+                    command.Parameters.AddWithValue("@start_date", user.startDate);
+                    command.Parameters.AddWithValue("@end_date", user.endDate);
+                    command.Parameters.AddWithValue("@reason", user.reason);
+                    command.Parameters.AddWithValue("@link_video", user.linkVideo);
+                    command.Parameters.AddWithValue("@link_printscreen", user.linkPrintScreen);
+                    command.Parameters.AddWithValue("@comment", user.comment);
+                    command.Parameters.AddWithValue("@user_id", user.userId);
+                    command.Parameters.AddWithValue("@admin_id", admin.playerId);
+                    command.Parameters.AddWithValue("@admin_mac", admin.macAddress.ToString());
+                    command.CommandText = $"INSERT INTO server_block(address, mac, hardware_id, bios_id, disk_id, video_id, start_date, end_date, reason, link_video, link_printscreen, comment, user_id, admin_id, admin_mac)VALUES(@address, @mac, @hardware_id, @bios_id, @disk_id, @video_id, @start_date, @end_date, @reason, @link_video, @link_printscreen, @comment, @user_id, @admin_id, @admin_mac) RETURNING block_id";
+                    user.blockId = Convert.ToInt32(command.ExecuteScalar());
+                    connection.Close();
+                }
+                if (user.blockId > 0)
+                {
+                    UsersBlock.TryAdd(user.ipAddress, user);
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                Logger.Exception(ex);
+            }
+            return false;
         }
     }
 }

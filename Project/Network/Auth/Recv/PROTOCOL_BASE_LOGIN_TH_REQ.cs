@@ -110,7 +110,7 @@ namespace PointBlank.Auth
                         player.LoadPlayerBonus();
                         player.LoadPlayerFriends(true);
                         player.LoadPlayerEvents();
-                        player.LoadPlayerConfigs();
+                        //player.LoadPlayerConfigs();
                         player.status.SetData(4294967295, player.playerId);
                         player.status.UpdateServer(0); //0 = Auth(Ainda não selecionou o servidor) Game = Settings.ServerId
                         player.clanPlayers = ClanManager.GetClanPlayers(player.clanId, player.playerId);

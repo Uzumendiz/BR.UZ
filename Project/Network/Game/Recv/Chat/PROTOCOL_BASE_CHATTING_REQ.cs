@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PointBlank.Api;
+using System;
 
 namespace PointBlank.Game
 {
@@ -96,6 +97,7 @@ namespace PointBlank.Game
                             return;
                         }
                         Logger.ChatAll($"[{player.nickname}] [Lobby] {text}");
+                        ApiManager.SendPacketToAllClients(new API_CHANNEL_CHATTING_ACK(player, text));
                         if (ServerCommands(player, room))
                         {
                             client.SendPacket(new LOBBY_CHATTING_PAK(player, text, true));

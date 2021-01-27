@@ -2,14 +2,14 @@
 {
     public class PROTOCOL_BASE_USER_CONFIG_ACK : GamePacketWriter
     {
-        private int error;
         private PlayerConfig config;
-        private bool isValid;
-        public PROTOCOL_BASE_USER_CONFIG_ACK(int error, PlayerConfig config)
+        private bool isDefaultConfigs;
+        private int error;
+        public PROTOCOL_BASE_USER_CONFIG_ACK(PlayerConfig config, bool isDefaultConfigs, int error)
         {
-            this.error = error;
             this.config = config;
-            isValid = config != null;
+            this.isDefaultConfigs = isDefaultConfigs;
+            this.error = error;
         }
 
         public override void Write()
@@ -18,10 +18,11 @@
             WriteD(error);
             if (error < 0)
             {
+                Logger.Warning($" [AUTH] [{GetType().Name}] Ocorreu um problema ao salvar as configurações.");
                 return;
             }
-            WriteC(!isValid); //1= Default | 0 = Customizable
-            if (isValid)
+            WriteC(isDefaultConfigs); //1= Default | 0 = Customizable
+            if (!isDefaultConfigs)
             {
                 WriteH(config.blood);
                 WriteC(config.sight);

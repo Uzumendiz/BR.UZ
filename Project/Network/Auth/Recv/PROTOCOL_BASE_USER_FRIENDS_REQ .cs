@@ -29,6 +29,7 @@ namespace PointBlank.Auth
                 client.SendPacket(new PROTOCOL_BASE_EXIT_URL_ACK(Settings.ExitUrl));
                 player.LoadPlayerFriends(false);
                 player.UpdateCommunity(true);
+                player.LoadPlayerConfigs();
                 List<Friend> friends = player.friends.friendsCache;
                 if (friends.Count > 0)
                 {
@@ -47,7 +48,7 @@ namespace PointBlank.Auth
                         }
                     }
                 }
-                client.SendPacket(new PROTOCOL_BASE_USER_CONFIG_ACK(0, player.configs));
+                client.SendPacket(new PROTOCOL_BASE_USER_CONFIG_ACK(player.configs, player.nickname.Length == 0 || player.configs == null, 0));
             }
             catch (Exception ex)
             {

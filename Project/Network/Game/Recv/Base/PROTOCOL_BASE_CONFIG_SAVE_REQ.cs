@@ -110,6 +110,7 @@ namespace PointBlank.Game
                 DateTime now = DateTime.Now;
                 if (player == null || (player.configs == null && !player.InsertConfig()) || (now - player.lastSaveConfigs).TotalSeconds < 1)
                 {
+                    Logger.Warning($" [GAME] [{GetType().Name}] Ocorreu um problema ao salvar as configurações. PlayerId: {player.playerId}");
                     return;
                 }
                 if (configs.blood > 3 || configs.sight > 3 || configs.hand > 1 || configs.config > 63 || configs.audioEnable > 7 || configs.audio > 100 || configs.music > 100 || configs.fov < 35 || configs.fov > 80 || configs.sensibilidade < 10 || configs.sensibilidade > 120 || configs.invertedMouse > 1 || (configs.messageInvitation != 0 && configs.messageInvitation != 16 && configs.messageInvitation != 32) || (configs.chatPrivate != 0 && configs.chatPrivate != 1 && configs.chatPrivate != 16 && configs.chatPrivate != 17) || configs.macros > 31 || configs.macro_1.Length > 58 || configs.macro_2.Length > 58 || configs.macro_3.Length > 58 || configs.macro_4.Length > 58 || configs.macro_5.Length > 58)

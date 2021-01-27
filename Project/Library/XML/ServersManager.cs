@@ -116,6 +116,7 @@ namespace PointBlank
                 Logger.Exception(ex);
             }
         }
+
         public static void Load()
         {
             if (!File.Exists(path))

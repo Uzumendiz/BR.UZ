@@ -195,7 +195,8 @@ namespace PointBlank
                     case 7: Packet = new API_GET_SERVER_INFO_REQ(); break;
                     case 8: Packet = new API_GET_ROOM_LIST_REQ(); break;
                     case 9: Packet = new API_GET_ROOM_INFO_REQ(); break;
-                    
+                    case 10: Packet = new API_GET_ROOM_SLOT_INFO_REQ(); break;
+
                     case 20: Packet = new API_BATTLE_TEST_REQ(); break;
 
                     default:

@@ -2,6 +2,8 @@
 using System;
 using System.Collections.Concurrent;
 using System.Linq;
+using System.Net;
+using System.Net.NetworkInformation;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -139,7 +141,7 @@ namespace PointBlank
         /// <param name="type">Tipo de procura\n0 = Login\n1 = Apelido\n2 = Id</param>
         /// <param name="searchDBFlag">Detalhes de procura (DB;Flag)\n0 = Nada\n1 = Títulos\n2 = Bônus\n4 = Amigos (Completo)\n8 = Eventos\n16 = Configurações\n32 = Amigos (Básico)</param>
         /// <returns></returns>
-        public static Account GetAccountDB(object valor, int type, int searchDBFlag)
+        private static Account GetAccountDB(object valor, int type, int searchDBFlag)
         {
             if (type == 2 && (long)valor == 0 || (type == 0 || type == 1) && (string)valor == "")
             {
@@ -215,6 +217,9 @@ namespace PointBlank
 
                             account.status.SetData((uint)data.GetInt64(45), account.playerId);
                             account.lastRankUpDate = (uint)data.GetInt64(46);
+                            account.ipAddress = IPAddress.Parse(data.GetString(48));
+                            account.macAddress = PhysicalAddress.Parse(data.GetString(49));
+                            account.hardwareId = data.GetString(50);
                             //AddAccount(account);
                         }
                         data.Close();
@@ -399,6 +404,9 @@ namespace PointBlank
 
                             account.status.SetData((uint)data.GetInt64(45), account.playerId);
                             account.lastRankUpDate = (uint)data.GetInt64(46);
+                            account.ipAddress = IPAddress.Parse(data.GetString(48));
+                            account.macAddress = PhysicalAddress.Parse(data.GetString(49));
+                            account.hardwareId = data.GetString(50);
                         }
                         playerReturn = account;
                         AddAccount(account);
@@ -483,6 +491,9 @@ namespace PointBlank
 
                             account.status.SetData((uint)data.GetInt64(45), account.playerId);
                             account.lastRankUpDate = (uint)data.GetInt64(46);
+                            account.ipAddress = IPAddress.Parse(data.GetString(48));
+                            account.macAddress = PhysicalAddress.Parse(data.GetString(49));
+                            account.hardwareId = data.GetString(50);
                             AddAccount(account);
                         }
                         data.Close();
@@ -564,6 +575,9 @@ namespace PointBlank
 
                             account.status.SetData((uint)data.GetInt64(45), account.playerId);
                             account.lastRankUpDate = (uint)data.GetInt64(46);
+                            account.ipAddress = IPAddress.Parse(data.GetString(48));
+                            account.macAddress = PhysicalAddress.Parse(data.GetString(49));
+                            account.hardwareId = data.GetString(50);
                             if (account.isOnline)
                             {
                                 account.SetOnlineStatus(false);

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 
 namespace PointBlank.Auth
 {
@@ -96,9 +97,10 @@ namespace PointBlank.Auth
                         client.Close(3000);
                         return;
                     }
-                    bool RequestUpdateIP = player.lastIp != PublicIP;
+                    bool RequestUpdateIP = player.ipAddress.ToString() != PublicIP;
                     if (RequestUpdateIP)
                     {
+                        player.ipAddress = IPAddress.Parse(PublicIP);
                         player.ExecuteQuery($"UPDATE accounts SET last_ip='{PublicIP}' WHERE id='{player.playerId}'");
                     }
 

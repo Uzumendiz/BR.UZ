@@ -1,4 +1,5 @@
 ﻿using Microsoft.Win32.SafeHandles;
+using PointBlank.Api;
 using PointBlank.Auth;
 using System;
 using System.Net;
@@ -387,6 +388,8 @@ namespace PointBlank
 
                         SessionPlayer.SyncPlayerToFriends(false);
                         SessionPlayer.SyncPlayerToClanMembers();
+
+                        ApiManager.SendPacketToAllClients(new API_SERVER_INFO_ACK());
 
                         SessionPlayer.GameClear();
                         SessionPlayer.UpdateCacheInfo();

@@ -227,6 +227,7 @@
     <Compile Include="Library\Utils\ClanModel.cs" />
     <Compile Include="Library\Utils\DBQuery.cs" />
     <Compile Include="Network\Admin\ApiClient.cs" />
+    <Compile Include="Network\Admin\ApiFunctionEnum.cs" />
     <Compile Include="Network\Admin\MachineModel.cs" />
     <Compile Include="Network\Admin\Recv\API_BATTLE_TEST_REQ.cs" />
     <Compile Include="Network\Admin\Recv\API_FUNCTION_REQ.cs" />
@@ -239,9 +240,11 @@
     <Compile Include="Network\Admin\Recv\API_LOGIN_ADMIN_REQ.cs" />
     <Compile Include="Network\Admin\Recv\API_RELOAD_CACHE_REQ.cs" />
     <Compile Include="Network\Admin\Recv\API_SETTINGS_CHANGE_REQ.cs" />
+    <Compile Include="Network\Admin\Send\API_ATTACK_NOTIFY_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_AUTH_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_BATTLE_TESTE_RESULT_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_CHANNEL_CHATTING_ACK.cs" />
+    <Compile Include="Network\Admin\Send\API_HISTORY_NICKNAME_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_LOGIN_ADMIN_RESULT_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_ONLINE_PLAYERS_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_RELOAD_CACHE_RESULT_ACK.cs" />
@@ -249,9 +252,11 @@
     <Compile Include="Network\Admin\Send\API_ROOM_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_ROOM_LIST_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_ROOM_SLOT_INFO_ACK.cs" />
+    <Compile Include="Network\Admin\Send\API_SEARCH_USER_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_SERVER_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_USER_DISCONNECT_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_USER_ENTER_ACK.cs" />
+    <Compile Include="Network\Admin\Send\API_USER_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_USER_ROOM_ENTER_OR_CREATE_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_SETTINGS_INFO_ACK.cs" />
     <Compile Include="Network\Admin\Send\API_USER_LOBBY_ENTER_ACK.cs" />

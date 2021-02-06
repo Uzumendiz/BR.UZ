@@ -57,8 +57,8 @@ namespace PointBlank.Game
                     player.UpdateCacheInfo();
                     player.status.UpdateServer((byte)Settings.ServerId);
                     client.SessionPlayer = player;
-                    ApiManager.SendPacketToAllClients(new API_USER_ENTER_ACK(player));
                     client.SendCompletePacket(PackageDataManager.BASE_USER_ENTER_SUCCESS_PAK);
+                    ApiManager.SendPacketToAllClients(new API_USER_ENTER_ACK(player));
                 }
                 else
                 {

@@ -1,0 +1,29 @@
+﻿namespace PointBlank.Api
+{
+    public enum ApiFunctionEnum
+    {
+        KICK_PLAYER,
+        KICK_ALL,
+        KICK_AFK,
+        SET_PCCAFE_BASIC,
+        SET_PCCAFE_PLUS,
+        SET_NICKNAME,
+        SEND_MESSAGE_TO_ALL,
+        SEND_MESSAGE_TO_SPECIFIC_ROOM_IN_CHANNEL,
+        SEND_MESSAGE_TO_PLAYER,
+        CHANGE_CHANNEL_ANNOUNCE,
+        NICK_HISTORY,
+        SET_RANK,
+        SET_GOLD,
+        SET_CASH,
+        ADD_ITEM,
+        BLOCK_USER_ONLINE,
+        BLOCK_USER_BY_ID,
+        SEARCH_USER_BY_NICKNAME,
+        CHANGE_ROOM_WEAPONSFLAG,
+        CHANGE_ROOM_MODESPECIAL,
+        CHANGE_ROOM_MODE,
+        BATTLE_END_TO_SPECIFIC_ROOM_SPECIFIC_IN_CHANNEL,
+        BATTLE_END_BY_PLAYER_SELECTED
+    }
+}

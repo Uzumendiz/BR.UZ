@@ -2,7 +2,6 @@
 using PointBlank.Api;
 using PointBlank.Game;
 using System;
-using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Runtime.InteropServices;
@@ -525,6 +524,7 @@ namespace PointBlank
                     SessionPlayer.SyncPlayerToClanMembers();
 
                     ApiManager.SendPacketToAllClients(new API_USER_DISCONNECT_ACK(SessionPlayer, 0));
+                    ApiManager.SendPacketToAllClients(new API_SERVER_INFO_ACK());
 
                     SessionPlayer.GameClear();
                     SessionPlayer.UpdateCacheInfo();

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PointBlank.Api
+﻿namespace PointBlank.Api
 {
     public class API_SERVER_INFO_ACK : ApiPacketWriter
     {

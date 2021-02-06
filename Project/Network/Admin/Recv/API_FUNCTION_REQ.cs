@@ -16,9 +16,10 @@ namespace PointBlank.Api
         public override void RunImplement()
         {
             string response = "";
-            switch (type)
+            ApiFunctionEnum function = (ApiFunctionEnum)type;
+            switch (function)
             {
-                case 1: //Kick Player
+                case ApiFunctionEnum.KICK_PLAYER:
                     {
                         long playerId = ReadLong();
                         Account player = AccountManager.GetAccount(playerId, true);
@@ -31,9 +32,10 @@ namespace PointBlank.Api
                         player.SendPacket(new AUTH_ACCOUNT_KICK_PAK(2));
                         player.Close(1000, true);
                         response = $"Você desconectou o jogador do servidor. Id: {player.playerId} Nick: {player.nickname}";
+                        ApiManager.SendPacketToAllClients(new API_USER_DISCONNECT_ACK(player, 1));
                         break;
                     }
-                case 2: //Kick All
+                case ApiFunctionEnum.KICK_ALL:
                     {
                         int count = 0;
                         using (AUTH_ACCOUNT_KICK_PAK packet = new AUTH_ACCOUNT_KICK_PAK(0))
@@ -56,13 +58,22 @@ namespace PointBlank.Api
                         response = $"Você desconectou {count} jogadores do servidor.";
                         break;
                     }
-                case 3: //Kick AFK
+                case ApiFunctionEnum.KICK_AFK:
                     {
                         int count = GameManager.KickActiveClient();
                         response = $"Foram desconectados {count} jogadores por inatividade.";
+                        List<Account> players = new List<Account>();
+                        foreach (Account player in AccountManager.accounts.Values)
+                        {
+                            if (player.client != null && player.isOnline)
+                            {
+                                players.Add(player);
+                            }
+                        }
+                        client.SendPacket(new API_ONLINE_PLAYERS_INFO_ACK(players));
                         break;
                     }
-                case 4: //Set Pccafe Basic
+                case ApiFunctionEnum.SET_PCCAFE_BASIC:
                     {
                         long playerId = ReadLong();
                         int days = ReadInt();
@@ -85,6 +96,7 @@ namespace PointBlank.Api
                                 player.SendPacket(new PROTOCOL_BASE_WEB_CASH_ACK(0, player.gold, player.cash));
                             }
                             response = $"Foi adicionado Pccafe Basic por {days} dias para o jogador. Id: {player.playerId} Nick: {player.nickname}";
+                            ApiManager.SendPacketToAllClients(new API_USER_INFO_ACK(player));
                         }
                         else
                         {
@@ -93,7 +105,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 5: //Set Pccafe Plus
+                case ApiFunctionEnum.SET_PCCAFE_PLUS:
                     {
                         long playerId = ReadLong();
                         int days = ReadInt();
@@ -116,6 +128,7 @@ namespace PointBlank.Api
                                 player.SendPacket(new PROTOCOL_BASE_WEB_CASH_ACK(0, player.gold, player.cash));
                             }
                             response = $"Foi adicionado Pccafe Plus por {days} dias para o jogador. Id: {player.playerId} Nick: {player.nickname}";
+                            ApiManager.SendPacketToAllClients(new API_USER_INFO_ACK(player));
                         }
                         else
                         {
@@ -124,36 +137,38 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 6: //Block user
+                case ApiFunctionEnum.SEND_MESSAGE_TO_PLAYER:
                     {
-                        DateTime date = DateTime.Now;
-                        UserBlock user = new UserBlock
+                        long playerId = ReadLong();
+                        string message = ReadString(ReadByte());
+                        if (message.Length >= 1024)
                         {
-                            ipAddress = ReadString(ReadByte()),
-                            macAddress = ReadString(ReadByte()),
-                            biosId = ReadString(ReadByte()),
-                            diskId = ReadString(ReadByte()),
-                            videoId = ReadString(ReadByte()),
-                            startDate = date,
-                            endDate = date.AddDays(ReadInt()),
-                            reason = ReadString(ReadByte()),
-                            linkVideo = ReadString(ReadByte()),
-                            linkPrintScreen = ReadString(ReadByte()),
-                            comment = ReadString(ReadByte()),
-                            userId = ReadLong()
-                        };
-                        if (ServerBlockManager.AddBlock(user, client.admin))
-                        {
-                            response = $"Usuário bloqueado.";
+                            response = $"Não é possivel mandar uma mensagem muito grande.";
+                            error = 0x8000;
                         }
                         else
                         {
-                            response = $"Falha ao bloquear o usuário.";
-                            error = 0x8000;
+                            Account player = AccountManager.GetAccount(playerId, true);
+                            if (player == null)
+                            {
+                                Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                                error = 0x8000;
+                                return;
+                            }
+                            if (player.isOnline)
+                            {
+                                player.client.SendPacket(new SERVER_MESSAGE_ANNOUNCE_PAK(message));
+                                response = $"Mensagem enviada com sucesso.";
+                            }
+                            else
+                            {
+                                response = $"Não é possivel mandar uma mensagem para o jogador offline.";
+                                error = 0x8000;
+                            }
                         }
                         break;
                     }
-                case 7: //Set Nickname
+                case ApiFunctionEnum.SET_NICKNAME:
                     {
                         long playerId = ReadLong();
                         string nickname = ReadString(ReadByte());
@@ -200,6 +215,7 @@ namespace PointBlank.Api
                             }
                             player.SyncPlayerToFriends(true);
                             response = $"Seu nickname foi alterado para {nickname}.";
+                            ApiManager.SendPacketToAllClients(new API_USER_INFO_ACK(player));
                         }
                         else
                         {
@@ -208,7 +224,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 8: //Send Message To All
+                case ApiFunctionEnum.SEND_MESSAGE_TO_ALL:
                     {
                         string message = ReadString(ReadByte());
                         if (message.Length >= 1024)
@@ -227,7 +243,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 9: //Send Message To Specific Room in Specific Channel
+                case ApiFunctionEnum.SEND_MESSAGE_TO_SPECIFIC_ROOM_IN_CHANNEL:
                     {
                         int channelId = ReadInt();
                         int roomId = ReadInt();
@@ -266,7 +282,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 10: //Add Cash
+                case ApiFunctionEnum.SET_CASH:
                     {
                         long playerId = ReadLong();
                         int valor = ReadInt();
@@ -291,6 +307,7 @@ namespace PointBlank.Api
                                 player.cash += cashValid;
                                 player.SendPacket(new PROTOCOL_BASE_WEB_CASH_ACK(0, player.gold, player.cash));
                                 response = $"O jogador {player.nickname} recebeu {valor} de cash.";
+                                ApiManager.SendPacketToAllClients(new API_USER_INFO_ACK(player));
                             }
                             else
                             {
@@ -300,7 +317,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 11: //Add Gold
+                case ApiFunctionEnum.SET_GOLD:
                     {
                         long playerId = ReadLong();
                         int valor = ReadInt();
@@ -325,6 +342,7 @@ namespace PointBlank.Api
                                 player.gold += goldValid;
                                 player.SendPacket(new PROTOCOL_BASE_WEB_CASH_ACK(0, player.gold, player.cash));
                                 response = $"O jogador {player.nickname} recebeu {valor} de gold.";
+                                ApiManager.SendPacketToAllClients(new API_USER_INFO_ACK(player));
                             }
                             else
                             {
@@ -334,7 +352,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 12: //Battle End by Player Selected
+                case ApiFunctionEnum.BATTLE_END_BY_PLAYER_SELECTED:
                     {
                         long playerId = ReadLong();
                         Account player = AccountManager.GetAccount(playerId, true);
@@ -365,7 +383,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 13: //Battle End To Specific Room in Specific Channel
+                case ApiFunctionEnum.BATTLE_END_TO_SPECIFIC_ROOM_SPECIFIC_IN_CHANNEL:
                     {
                         long playerId = ReadLong();
                         int channelId = ReadInt();
@@ -403,7 +421,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 14: //Change Room Mode
+                case ApiFunctionEnum.CHANGE_ROOM_MODE:
                     {
                         long playerId = ReadLong();
                         int stageType = ReadInt();
@@ -428,7 +446,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 15: //Change Room ModeSpecial
+                case ApiFunctionEnum.CHANGE_ROOM_MODESPECIAL:
                     {
                         long playerId = ReadLong();
                         int special = ReadInt();
@@ -453,7 +471,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 16: //Change Room WeaponsFlag
+                case ApiFunctionEnum.CHANGE_ROOM_WEAPONSFLAG:
                     {
                         long playerId = ReadLong();
                         int flags = ReadInt();
@@ -478,7 +496,7 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 17: //Change Rank
+                case ApiFunctionEnum.SET_RANK:
                     {
                         long playerId = ReadLong();
                         byte rank = ReadByte();
@@ -565,6 +583,7 @@ namespace PointBlank.Api
                                 room.UpdateSlotsInfo();
                             }
                             response = $"Seu rank foi alterado para {rank}.";
+                            ApiManager.SendPacketToAllClients(new API_USER_INFO_ACK(player));
                         }
                         else
                         {
@@ -573,24 +592,24 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 18: //Nick History
+                case ApiFunctionEnum.NICK_HISTORY:
                     {
                         int type = ReadByte();
                         if (type == 0)
                         {
                             string nickname = ReadString(ReadByte());
-                            NickHistoryManager.GetHistory(nickname, type);
+                            client.SendPacket(new API_HISTORY_NICKNAME_ACK(NickHistoryManager.GetHistory(nickname, type)));
                             response = "Buscando o histórico de nickname pelo nickname.";
                         }
                         else
                         {
                             long playerId = ReadLong();
-                            NickHistoryManager.GetHistory(playerId, type);
-                            response = "Buscando o histórico de nickname pelo playerId.";
+                            client.SendPacket(new API_HISTORY_NICKNAME_ACK(NickHistoryManager.GetHistory(playerId, type)));
+                             response = "Buscando o histórico de nickname pelo playerId.";
                         }
                         break;
                     }
-                case 19: //ADD ITEM
+                case ApiFunctionEnum.ADD_ITEM:
                     {
                         long playerId = ReadLong();
                         int itemId = ReadInt();
@@ -614,8 +633,106 @@ namespace PointBlank.Api
                         }
                         break;
                     }
-                case 20:
+                case ApiFunctionEnum.BLOCK_USER_ONLINE:
                     {
+                        DateTime date = DateTime.Now;
+
+                        long playerId = ReadLong();
+                        DateTime endDate = date.AddDays(ReadInt());
+                        string reason = ReadString(ReadByte());
+                        string linkVideo = ReadString(ReadByte());
+                        string linkPrintScreen = ReadString(ReadByte());
+                        string comment = ReadString(ReadByte());
+
+                        Account player = AccountManager.GetAccount(playerId, true); //true=Não usa a db, ou seja, somente players online.
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
+                            return;
+                        }
+                        UserBlock user = new UserBlock
+                        {
+                            ipAddress = player.ipAddress.ToString(),
+                            macAddress = player.macAddress.ToString(),
+                            //biosId = player.biosId,
+                            //diskId = player.diskId,
+                            //videoId = player.videoId,
+                            startDate = date,
+                            endDate = endDate,
+                            reason = reason,
+                            linkVideo = linkVideo,
+                            linkPrintScreen = linkPrintScreen,
+                            comment = comment,
+                            userId = playerId
+                        };
+                        if (ServerBlockManager.AddBlock(user, client.admin))
+                        {
+                            response = $"Usuário bloqueado.";
+                        }
+                        else
+                        {
+                            response = $"Falha ao bloquear o usuário.";
+                            error = 0x8000;
+                        }
+                        break;
+                    }
+                case ApiFunctionEnum.BLOCK_USER_BY_ID:
+                    {
+                        DateTime date = DateTime.Now;
+
+                        long playerId = ReadLong();
+                        DateTime endDate = date.AddDays(ReadInt());
+                        string reason = ReadString(ReadByte());
+                        string linkVideo = ReadString(ReadByte());
+                        string linkPrintScreen = ReadString(ReadByte());
+                        string comment = ReadString(ReadByte());
+
+                        Account player = AccountManager.GetAccount(playerId, false); //true=Não usa a db, ou seja, somente players online.
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Id: {playerId}");
+                            error = 0x8000;
+                            return;
+                        }
+                        UserBlock user = new UserBlock
+                        {
+                            ipAddress = player.ipAddress.ToString(),
+                            macAddress = player.macAddress.ToString(),
+                            //biosId = player.biosId,
+                            //diskId = player.diskId,
+                            //videoId = player.videoId,
+                            startDate = date,
+                            endDate = endDate,
+                            reason = reason,
+                            linkVideo = linkVideo,
+                            linkPrintScreen = linkPrintScreen,
+                            comment = comment,
+                            userId = playerId
+                        };
+                        if (ServerBlockManager.AddBlock(user, client.admin))
+                        {
+                            response = $"Usuário bloqueado.";
+                        }
+                        else
+                        {
+                            response = $"Falha ao bloquear o usuário.";
+                            error = 0x8000;
+                        }
+                        break;
+                    }
+                case ApiFunctionEnum.SEARCH_USER_BY_NICKNAME:
+                    {
+                        string nickname = ReadString(ReadByte());
+                        Account player = AccountManager.GetAccount(nickname, 0);
+                        if (player == null)
+                        {
+                            Logger.Warning($" [{GetType().Name}] Player is null. Nickname: {nickname}");
+                            error = 0x8000;
+                            return;
+                        }
+                        response = "Usuário encontrado.";
+                        client.SendPacket(new API_SEARCH_USER_ACK(player));
                         break;
                     }
             }

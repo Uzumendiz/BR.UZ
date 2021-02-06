@@ -12,7 +12,7 @@
 
         public override void Write()
         {
-            WriteH(3093);
+            WriteH(12);
             WriteD(sender.GetSessionId());
             WriteD(sender.channelId);
             WriteC((byte)(sender.nickname.Length + 1));

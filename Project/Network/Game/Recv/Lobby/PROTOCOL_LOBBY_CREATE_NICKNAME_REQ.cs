@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PointBlank.Api;
+using System;
 using System.Collections.Generic;
 
 namespace PointBlank.Game
@@ -36,6 +37,7 @@ namespace PointBlank.Game
                     }
                     client.SendCompletePacket(PackageDataManager.LOBBY_CREATE_NICKNAME_SUCCESS_PAK);
                     client.SendPacket(new PROTOCOL_BASE_QUEST_GET_INFO_ACK(player));
+                    ApiManager.SendPacketToAllClients(new API_USER_INFO_ACK(player));
                 }
                 else
                 {

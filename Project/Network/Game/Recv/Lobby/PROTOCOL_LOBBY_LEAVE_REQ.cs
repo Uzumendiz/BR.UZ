@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PointBlank.Api;
+using System;
 
 namespace PointBlank.Game
 {
@@ -29,6 +30,8 @@ namespace PointBlank.Game
                 player.status.UpdateChannel(255);
                 player.SyncPlayerToFriends(false);
                 player.SyncPlayerToClanMembers();
+                ApiManager.SendPacketToAllClients(new API_USER_INFO_ACK(player));
+                ApiManager.SendPacketToAllClients(new API_SERVER_INFO_ACK());
             }
             catch (Exception ex)
             {

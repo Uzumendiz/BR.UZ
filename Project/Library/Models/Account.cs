@@ -19,7 +19,6 @@ namespace PointBlank
         public string password;
 
         public long banId;
-        public string lastIp;
         public uint lastRankUpDate;
         public uint lastLoginDate;
         public int lastRoomPage;
@@ -69,7 +68,7 @@ namespace PointBlank
         public bool checkUserWebCash;
         public bool checkUserConfigsSave;
 
-        public IPAddress ipAddress;
+        public IPAddress ipAddress = new IPAddress(new byte[4]);
         public short Port;
         public PhysicalAddress macAddress;
         public byte[] localIP = new byte[4];

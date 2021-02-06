@@ -14,7 +14,7 @@ namespace PointBlank.Api
         {
             try
             {
-                WriteH(3861);
+                WriteH(14);
                 //if (room.GetLeader() == null)
                 //{
                 //    room.SetNewLeader(-1, 0, room.leaderSlot, false);

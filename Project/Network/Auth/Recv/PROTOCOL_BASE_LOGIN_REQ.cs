@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PointBlank.Api;
+using System;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -160,8 +161,8 @@ namespace PointBlank.Auth
                     else
                     {
                         bool RequestUpdateMAC = player.macAddress != MacAddress;
-                        bool RequestUpdateIP = player.lastIp != PublicIP;
-
+                        bool RequestUpdateIP = player.ipAddress.ToString() != PublicIP;
+                        player.ipAddress = IPAddress.Parse(PublicIP);
                         if (RequestUpdateMAC && RequestUpdateIP)
                         {
                             player.ExecuteQuery($"UPDATE accounts SET last_ip='{PublicIP}', last_mac='{MacAddress}' WHERE id='{player.playerId}'");
@@ -214,6 +215,7 @@ namespace PointBlank.Auth
                                 }
                                 ServersManager.UpdateServerPlayers();
                                 client.PROTOCOL_BASE_HEARTBEAT_ACK();
+                                ApiManager.SendPacketToAllClients(new API_SERVER_INFO_ACK());
                             }
                             else
                             {

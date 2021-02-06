@@ -67,6 +67,7 @@ namespace PointBlank.Game
                     }
                 }
                 ApiManager.SendPacketToAllClients(new API_USER_LOBBY_ENTER_ACK(player));
+                ApiManager.SendPacketToAllClients(new API_SERVER_INFO_ACK());
                 Thread.Sleep(3000);
                 if (!player.firstLobbyEnter)
                 {
